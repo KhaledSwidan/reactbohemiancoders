@@ -1,0 +1,15 @@
+.headCar{background-color:#5b9aaf}
+.headCar::before{
+  content: "";
+  background-image: linear-gradient(rgb(13 92 117 / 0%),rgb(13 92 117 / 50%)),url(../imgs/hero-img.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.carItem{flex-direction: column;}
+.carCaption{margin-left: .5rem !important;}
