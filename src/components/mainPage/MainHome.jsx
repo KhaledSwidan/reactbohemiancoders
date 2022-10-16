@@ -11,6 +11,7 @@ const MainHome = () =>
     <>
       <header className={`${headCar} position-relative d-flex flex-column justify-content-between`} style={{ height: "85vh" }}>
         <CarouselHome />
+        <p>Welcomeeee</p>
         <div className="container">
           <AdHome />
         </div>
