@@ -1,15 +1,35 @@
 .headCar{background-color:#5b9aaf}
 .headCar::before{
   content: "";
-  background-image: linear-gradient(rgb(13 92 117 / 0%),rgb(13 92 117 / 50%)),url(../imgs/hero-img.webp);
-  background-position: center center;
+  background-image: linear-gradient(rgb(13 92 117 / 0%),rgb(13 92 117 / 50%)),url(../imgs/medical-tips.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+  opacity: .7;
 }
 .carItem{flex-direction: column;}
 .carCaption{margin-left: .5rem !important;}
+.mainHead{
+  width: 50%;
+  margin: 2rem 1rem;
+  padding: .5rem 1rem;
+  z-index: 10;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.content p{color: #2a2a2a;}
+.logos svg{
+  color: #e1f0f5 !important;
+  margin-left: 10px;
+  font-size: 2rem;
+}
+.logos svg:hover{filter: drop-shadow(0 0 2px #e1f0f5);}

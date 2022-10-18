@@ -16,6 +16,7 @@ import Ph7Section from './components/sections/Ph7Section';
 import Ph8Section from './components/sections/Ph8Section';
 import MainPhSection from './components/sections/MainPhSection';
 import FinalBlog from './components/blog/FinalBlog';
+import FinalProducts from './components/products/FinalProducts';
 import Brands from './components/brands/Brands';
 
 const App = () =>
@@ -38,6 +39,7 @@ const App = () =>
           <Route path='ph8section' element={<Ph8Section />} />
         </Route>
         <Route path='/blogs' element={<FinalBlog />} />
+        <Route path='/products' element={<FinalProducts />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Features />

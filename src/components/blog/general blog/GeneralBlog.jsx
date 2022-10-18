@@ -18,8 +18,8 @@ const GeneralBlog = () =>
   {
     return (
       <>  
-        <div className="col-md-6 col-lg-4 mt-3" key={e.id}>
-          <div className={`${card} bg-white rounded`}>
+        <div className="col-md-6 col-lg-4 mt-3">
+          <div className={`${card} bg-white rounded`} key={e.toString()}>
             <img src={e.imgSrc} className="card-img-top rounded-top" alt={e.title} />
             <div className="card-body py-3 px-2">
               <h5 className="card-title">{e.title}</h5>
