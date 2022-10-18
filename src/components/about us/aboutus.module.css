@@ -6,7 +6,7 @@
 }
 .number{
   font-size: 12rem;
-  color: blueviolet;
+  color: #19647c;
 }
 .icon{color: #fff;}
 .feat{transition: all .6s ease-in-out;}
@@ -17,4 +17,5 @@
   background-color: rgb(228, 228, 228);
   transition: all .6s ease-in-out;
 }
-.feat h4{color: #455c17;}
+.feat h4{color: #000;}
+.feat p{color: #444a4f !important;}

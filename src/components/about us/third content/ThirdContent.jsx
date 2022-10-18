@@ -13,7 +13,7 @@ const ThirdContent = () =>
             <i className={`fa-solid fa-user-doctor position-absolute bottom-0 fa-4x ${icon}`}></i>
           </div>
           <h4 className="my-3 text-uppercase fw-bold">Graphic Design</h4>
-          <p className="text-muted lh-lg">
+          <p className="lh-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt voluptas
             ducimus, rerum sit distinctio magnam sequi ipsam earum ipsum labore fuga neque optio
             voluptatum consequatur nostrum magni perferendis reprehenderit!

@@ -1,18 +1,54 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import MainTitle from '../mainTitle/MainTitle';
 import styles from "./sections.module.css";
 
 const Ph8Section = () =>
 {
   const { subSection, gall, gallBoxy, phSections } = styles;
-  const [medOneJson, setMedOneJson] = useState([]);
-
-  useEffect(() =>
-  {
-    fetch("http://localhost:9000/sections")
-      .then(res => res.json())
-      .then(data => setMedOneJson(data))
-  }, []);
+  const [medOneJson, setMedOneJson] = useState([
+    {
+      "id": 1,
+      "imgSrc": "https://picsum.photos/id/9/720/480",
+      "title": "منتج1",
+      "content": "شرح تفصيلي للمنتج"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://picsum.photos/id/2/720/480",
+      "title": "منتج2",
+      "content": "شرح تفصيلي للمنتج"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://picsum.photos/id/3/720/480",
+      "title": "منتج3",
+      "content": "شرح تفصيلي للمنتج"
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://picsum.photos/id/4/720/480",
+      "title": "منتج4",
+      "content": "شرح تفصيلي للمنتج"
+    },
+    {
+      "id": 5,
+      "imgSrc": "https://picsum.photos/id/5/720/480",
+      "title": "منتج5",
+      "content": "شرح تفصيلي للمنتج"
+    },
+    {
+      "id": 6,
+      "imgSrc": "https://picsum.photos/id/6/720/480",
+      "title": "منتج6",
+      "content": "شرح تفصيلي للمنتج"
+    },
+    {
+      "id": 7,
+      "imgSrc": "https://picsum.photos/id/7/720/480",
+      "title": "منتج7",
+      "content": "شرح تفصيلي للمنتج"
+    }
+  ]);
 
   const medicineBox = medOneJson.map((e) =>
   {

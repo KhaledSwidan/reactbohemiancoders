@@ -18,6 +18,10 @@ import MainPhSection from './components/sections/MainPhSection';
 import FinalBlog from './components/blog/FinalBlog';
 import FinalProducts from './components/products/FinalProducts';
 import Brands from './components/brands/Brands';
+import PointsPolicy from './components/polices/PointsPolicy';
+import ShippingPolicy from './components/polices/ShippingPolicy';
+import UsagePolicy from './components/polices/UsagePolicy';
+import PrivacyPolicy from './components/polices/PrivacyPolicy';
 
 const App = () =>
 {
@@ -40,6 +44,10 @@ const App = () =>
         </Route>
         <Route path='/blogs' element={<FinalBlog />} />
         <Route path='/products' element={<FinalProducts />} />
+        <Route path='/pointspolicy' element={<PointsPolicy />} />
+        <Route path='/shippingpolicy' element={<ShippingPolicy />} />
+        <Route path='/usagepolicy' element={<UsagePolicy />} />
+        <Route path='/privacypolicy' element={<PrivacyPolicy />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Features />

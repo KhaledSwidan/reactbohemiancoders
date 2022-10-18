@@ -45,7 +45,7 @@ const SideNavBar = () =>
             <li>
               <hr className="dropdown-divider" />
             </li>
-            <li className="text-white">اطلب دوائك بسهولة</li>
+            <li className="text-white text-center">اطلب دوائك بسهولة</li>
           </ul>
         </li>
         <li className="nav-item dropdown">
@@ -59,7 +59,7 @@ const SideNavBar = () =>
             <li>
               <hr className="dropdown-divider" />
             </li>
-            <li className="text-white">نحو حياة صحية أفضل</li>
+            <li className="text-white text-center">نحو حياة صحية أفضل</li>
           </ul>
         </li>
         <li className="nav-item">

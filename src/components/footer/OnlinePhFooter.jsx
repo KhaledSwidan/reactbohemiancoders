@@ -21,7 +21,7 @@ const OnlinePhFooter = () =>
               <Link to="/" className="text-white-50">لماذا نحن؟</Link>
             </li>
             <li>
-              <Link to="/" className="text-white-50">المدونة</Link>
+              <Link to="/blogs" className="text-white-50">المدونة</Link>
             </li>
             <li>
               <Link to="/" className="text-white-50">تواصل معنا</Link>

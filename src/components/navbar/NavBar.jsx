@@ -17,7 +17,7 @@ const NavBar = () =>
           </Link>
           <div className="d-flex align-items-center">
             <address className="mb-0 text-center">عنوان الادارة / الاسكندرية - مصر</address>
-            <Link to="tel:123456789" className='text-white ps-1'>03/578499111</Link>
+            <a href="tel:123456789" className='text-white ps-1'>03/578499111</a>
           </div>
         </div>
         <div className="container">
