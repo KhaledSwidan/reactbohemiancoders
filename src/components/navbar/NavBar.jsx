@@ -10,7 +10,7 @@ const NavBar = () =>
   return (
     <>
       <nav className={`navbar ${topnav} pt-0 `}>
-        <div className="container d-flex justify-content-center align-items-center w-100 py-2 px-5 position-relative border-bottom">
+        <div className="container d-flex justify-content-around align-items-center w-100 py-2 px-5 position-relative border-bottom">
           <Link className="navbar-brand d-flex flex-row-reverse justify-content-center align-items-center" to="/">
             <img src={siteLogo} className="w-25 ps-1" alt="" />
             أسم الصيدلية|

@@ -13,7 +13,7 @@ const CarouselHome = () =>
           <h1 className='text-white'>نحن شركاء رحلتك نحو حياة صحية سعيدة</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iusto voluptate necessitatibus, asperiores dolore error suscipit eius explicabo aut temporibus expedita quod quae quaerat. Nihil placeat quibusdam quasi dolorem saepe.</p>
         </div>
-        <div className='mt-2'>
+        <div className="mt-2" id="order">
           <div className={`${logos} d-flex justify-content-center`}>
             <i className="fa-solid fa-hand-holding-medical"></i>
             <i className="fa-solid fa-file-prescription"></i>
