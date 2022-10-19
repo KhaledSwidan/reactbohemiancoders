@@ -5,7 +5,7 @@ import styles from "./sections.module.css";
 const Ph1Section = () =>
 {
   const { subSection, gall, gallBoxy, phSections } = styles;
-  const [medOneJson, setMedOneJson] = useState([
+  const [medOneJson] = useState([
     {
       "id": 1,
       "imgSrc": "https://picsum.photos/id/9/720/480",

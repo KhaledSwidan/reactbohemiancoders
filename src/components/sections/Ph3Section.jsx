@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import MainTitle from '../mainTitle/MainTitle';
 import styles from "./sections.module.css";
 
 const Ph3Section = () =>
 {
   const { subSection, gall, gallBoxy, phSections } = styles;
-  const [medOneJson, setMedOneJson] = useState([
+  const [medOneJson] = useState([
     {
       "id": 1,
       "imgSrc": "https://picsum.photos/id/9/720/480",
