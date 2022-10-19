@@ -15,7 +15,7 @@ const Brands = () =>
           المنتجات والعروض والخصومات"/>
           <div className="row">
             <div className="row d-flex align-items-center justify-content-center" id="boxBrand">
-              <OffCanvBrand/>
+              <OffCanvBrand />
             </div>
           </div>
         </div>

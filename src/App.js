@@ -22,6 +22,7 @@ import PointsPolicy from './components/polices/PointsPolicy';
 import ShippingPolicy from './components/polices/ShippingPolicy';
 import UsagePolicy from './components/polices/UsagePolicy';
 import PrivacyPolicy from './components/polices/PrivacyPolicy';
+import Offers from './components/offers/Offers';
 
 const App = () =>
 {
@@ -44,6 +45,7 @@ const App = () =>
         </Route>
         <Route path='/blogs' element={<FinalBlog />} />
         <Route path='/products' element={<FinalProducts />} />
+        <Route path='/offers' element={<Offers />} />
         <Route path='/pointspolicy' element={<PointsPolicy />} />
         <Route path='/shippingpolicy' element={<ShippingPolicy />} />
         <Route path='/usagepolicy' element={<UsagePolicy />} />
