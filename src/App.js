@@ -23,6 +23,11 @@ import ShippingPolicy from './components/polices/ShippingPolicy';
 import UsagePolicy from './components/polices/UsagePolicy';
 import PrivacyPolicy from './components/polices/PrivacyPolicy';
 import Offers from './components/offers/Offers';
+import GeneralBlog from './components/blog/general blog/GeneralBlog';
+import FirstBlog from './components/blog/blog one/FirstBlog';
+import SecondBlog from './components/blog/blog two/SecondBlog';
+import ThirdBlog from './components/blog/blog three/ThirdBlog';
+import ForthBlog from './components/blog/blog four/ForthBlog';
 
 const App = () =>
 {
@@ -32,6 +37,7 @@ const App = () =>
       <Routes>
         <Route path='/' element={<MainHome />} />
         <Route path='/brands' element={<Brands />} />
+
         <Route path='/mainphsection' element={<MainPhSection />} >
           <Route index element={<Ph1Section />} />
           <Route path='ph1section' element={<Ph1Section />} />
@@ -43,13 +49,23 @@ const App = () =>
           <Route path='ph7section' element={<Ph7Section />} />
           <Route path='ph8section' element={<Ph8Section />} />
         </Route>
-        <Route path='/blogs' element={<FinalBlog />} />
+
+        <Route path='/blogs' element={<FinalBlog />} >
+          <Route path='generalblog' element={<GeneralBlog />} />
+          <Route path='firstblog' element={<FirstBlog />} />
+          <Route path='secondblog' element={<SecondBlog />} />
+          <Route path='thirdblog' element={<ThirdBlog />} />
+          <Route path='forthblog' element={<ForthBlog />} />
+        </Route>
+
         <Route path='/products' element={<FinalProducts />} />
         <Route path='/offers' element={<Offers />} />
+
         <Route path='/pointspolicy' element={<PointsPolicy />} />
         <Route path='/shippingpolicy' element={<ShippingPolicy />} />
         <Route path='/usagepolicy' element={<UsagePolicy />} />
         <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Features />

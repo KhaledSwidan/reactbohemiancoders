@@ -1,14 +1,11 @@
 import MainTitle from "../mainTitle/MainTitle";
-import FirstBlog from "./blog one/FirstBlog";
 import styles from "./blog.module.css";
-import GeneralBlog from "./general blog/GeneralBlog";
-import SecondBlog from "./blog two/SecondBlog";
-import ThirdBlog from "./blog three/ThirdBlog";
-import ForthBlog from "./blog four/ForthBlog";
+import NavBlog from "./blog nav/NavBlog";
+import { Outlet } from "react-router-dom";
 
 const FinalBlog = () =>
 {
-  const {blog, mainTopics} = styles;
+  const { blog } = styles;
   return (
     <>
       <section className={`${blog} py-5" id="blog `}>
@@ -16,17 +13,8 @@ const FinalBlog = () =>
           <MainTitle title="المقالات الطبية"
             content="تعرف على اخر المقالات الطبية والمواضيع المتعلقة بالصحة والأدوية
           ومستحضرات التجميل" />
-          <div className={`${mainTopics} scrollspy-example`} data-bs-spy="scroll" data-bs-target="#navBlog" data-bs-smooth-scroll="true" tabIndex={-1}>
-            <GeneralBlog />
-            <hr />
-            <FirstBlog />
-            <hr />
-            <SecondBlog />
-            <hr />
-            <ThirdBlog />
-            <hr />
-            <ForthBlog />
-          </div>
+          <NavBlog />
+          <Outlet />
         </div>
       </section>
     </>

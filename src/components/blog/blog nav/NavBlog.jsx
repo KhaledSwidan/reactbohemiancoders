@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from "../blog.module.css";
 
 const NavBlog = () =>
@@ -10,19 +10,19 @@ const NavBlog = () =>
       <nav id="navBlog" className={`navbar ${navblog} px-3 mb-3`}>
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <Link className="nav-link" to="#generalBlog">أحدث الأخبار الطبية</Link>
+            <NavLink className="nav-link" to="generalblog">أحدث الأخبار الطبية</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#firstBlog">الأمراض المزمنة</Link>
+            <NavLink className="nav-link" to="firstblog">الأمراض المزمنة</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#secondBlog">الأمراض الموسمية</Link>
+            <NavLink className="nav-link" to="secondblog">الأمراض الموسمية</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#thirdBlog">الجلدية والتجميل</Link>
+            <NavLink className="nav-link" to="thirdblog">الجلدية والتجميل</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#forthBlog">الحياة اليومية</Link>
+            <NavLink className="nav-link" to="forthblog">الحياة اليومية</NavLink>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 import React from 'react';
 import MainTitle from "../mainTitle/MainTitle";
+import ExistProducts from './exist product/ExistProducts';
 import NoProducts from './no product/NoProducts';
 
 const FinalServices = () =>
@@ -12,6 +13,7 @@ const FinalServices = () =>
             content="تعرف على التحضيرات والوصفات الطبية" />
           <div className="products-types py-4 px-3">
             <div className="all-products d-flex justify-content-center align-items-center flex-wrap" id="all-products">
+              <ExistProducts />
             </div>
             <hr />
             <div className="noproduct">
