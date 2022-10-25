@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { ShoppingCartProvider } from './components/sections/ShoppingCartContext';
 
 import Footer from './components/footer/Footer';
 import MainHome from './components/mainPage/MainHome';
@@ -24,7 +25,7 @@ import ForthBlog from './components/blog/blog four/ForthBlog';
 const App = () =>
 {
   return (
-    <>
+    <ShoppingCartProvider>
       <NavBar />
       <Routes>
         <Route path='/' element={<MainHome />} />
@@ -52,7 +53,7 @@ const App = () =>
       </Routes>
       <Features />
       <Footer />
-    </>
+    </ShoppingCartProvider>
   );
 };
 

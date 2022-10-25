@@ -2,40 +2,39 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import styles from "./fullnavbar.module.css";
 
-
 const SideNavBar = () =>
 {
-  const {mainSections } = styles;
+  const { mainSections } = styles;
   return (
     <>
       <ul className={`navbar-nav ${mainSections} px-3`}>
         <li className="nav-item">
           <NavLink className="nav-link" to="/">
-          <i className="fa-solid fa-house me-3"></i>
+            <i className="fa-solid fa-house me-3"></i>
             الرئيسية
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/mainphsection">
-          <i className="fa-solid fa-prescription me-3"></i>
+            <i className="fa-solid fa-prescription me-3"></i>
             الصيدلية
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/brands">
-          <i className="fa-solid fa-prescription me-3"></i>
+            <i className="fa-solid fa-prescription me-3"></i>
             العلامات التجارية
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/offers">
-          <i className="fa-solid fa-gift me-3"></i>
+            <i className="fa-solid fa-gift me-3"></i>
             العروض
           </NavLink>
         </li>
         <li className="nav-item dropdown">
           <Link className="nav-link dropdown-toggle" id="roshetaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i className="fa-solid fa-pills me-3"></i>
+            <i className="fa-solid fa-pills me-3"></i>
             الروشتة
           </Link>
           <ul className="dropdown-menu" aria-labelledby="roshetaDropdown">
@@ -50,7 +49,7 @@ const SideNavBar = () =>
         </li>
         <li className="nav-item dropdown">
           <Link className="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i className="fa-solid fa-hand-holding-medical me-3"></i>
+            <i className="fa-solid fa-hand-holding-medical me-3"></i>
             الخدمات
           </Link>
           <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -64,13 +63,13 @@ const SideNavBar = () =>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/blogs">
-          <i className="fa-solid fa-circle-info me-3"></i>
+            <i className="fa-solid fa-circle-info me-3"></i>
             نصائح طبية
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/products">
-          <i className="fa-solid fa-staff-snake me-3"></i>
+            <i className="fa-solid fa-staff-snake me-3"></i>
             منتجاتنا
           </NavLink>
         </li>
