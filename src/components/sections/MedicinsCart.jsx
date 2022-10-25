@@ -1,8 +1,8 @@
 import React from 'react'
 import { Offcanvas, Stack } from 'react-bootstrap'
 import { UseShoppingCart, FormatCurrency } from '../../context/ShoppingCartContext';
-import CartItem from './CartItem';
 import sections from "../../data/sections.json";
+import MedicinItem from './MedicinItem';
 
 const ShoppingCart = ({ isOpen }) =>
 {
@@ -14,7 +14,7 @@ const ShoppingCart = ({ isOpen }) =>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Stack gap={3}>
-          {cartItems.map(e => <CartItem key={e.id} {...e} />)}
+          {cartItems.map(e => <MedicinItem key={e.id} {...e} />)}
           <div className="ms-auto fw-bold fs-5">
             Total {" "}
             {FormatCurrency(cartItems.reduce((total, cartItem) =>

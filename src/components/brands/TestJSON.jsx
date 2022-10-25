@@ -56,7 +56,7 @@ const TestJSON = () =>
     <>
       {offCanBrandJSX}
     </>
-  )
-}
+  );
+};
 
 export default TestJSON

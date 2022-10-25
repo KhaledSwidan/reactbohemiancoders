@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import ShoppingCart from '../components/ShoppingCart';
+import MedicinsCart from "../components/sections/MedicinsCart";
 
 export const ShoppingCartContext = createContext({});
 
@@ -60,7 +60,7 @@ export const ShoppingCartProvider = ({ children }) =>
         cartQuantity
       }}>
       {children}
-      <ShoppingCart isOpen={isOpen} />
+      <MedicinsCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };
@@ -68,7 +68,9 @@ export const ShoppingCartProvider = ({ children }) =>
 export const UseShoppingCart = () => useContext(ShoppingCartContext);
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
-  currency: "EGP",
+  currency: "USD",
   style: "currency",
 });
-export const FormatCurrency = number => CURRENCY_FORMATTER.format(number);
+export const FormatCurrency = (number) => {
+  return CURRENCY_FORMATTER.format(number);
+};
