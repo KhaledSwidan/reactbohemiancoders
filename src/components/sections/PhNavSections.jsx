@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 const PhNavSections = () =>
 {
   const { toolTip, navBullets } = styles;
-  const [cats, setCats] = useState("");
+  const [ setCats] = useState("");
 
   const filterResult = catItem => setCats(sections.filter(e => e.category === catItem));
 
