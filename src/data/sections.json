@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "https://picsum.photos/id/9/720/480",
+    "title": "منتج1",
+    "content": "شرح تفصيلي للمنتج"
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://picsum.photos/id/2/720/480",
+    "title": "منتج2",
+    "content": "شرح تفصيلي للمنتج"
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://picsum.photos/id/3/720/480",
+    "title": "منتج3",
+    "content": "شرح تفصيلي للمنتج"
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://picsum.photos/id/4/720/480",
+    "title": "منتج4",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://picsum.photos/id/5/720/480",
+    "title": "منتج5",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50
+  },
+  {
+    "id": 6,
+    "imgSrc": "https://picsum.photos/id/6/720/480",
+    "title": "منتج6",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50
+  },
+  {
+    "id": 7,
+    "imgSrc": "https://picsum.photos/id/7/720/480",
+    "title": "منتج7",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50
+  }
+]
