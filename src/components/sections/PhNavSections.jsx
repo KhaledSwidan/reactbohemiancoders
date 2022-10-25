@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import { React } from 'react';
 import styles from "./sections.module.css";
-import sections from "../../data/sections.json";
 import { Button } from 'react-bootstrap';
 
-const PhNavSections = () =>
+
+const PhNavSections = ({filterResult}) =>
 {
   const { toolTip, navBullets } = styles;
-  const [ setCats] = useState("");
-
-  const filterResult = catItem => setCats(sections.filter(e => e.category === catItem));
 
   return (
     <>

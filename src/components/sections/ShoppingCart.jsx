@@ -10,13 +10,14 @@ const ShoppingCart = ({ isOpen }) =>
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="start">
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Card</Offcanvas.Title>
+        <Offcanvas.Title>سلة المشتريات</Offcanvas.Title>
       </Offcanvas.Header>
+      <hr className='mt-0'/>
       <Offcanvas.Body>
         <Stack gap={3}>
           {cartItems.map(e => <CartItem key={e.id} {...e} />)}
-          <div className="ms-auto fw-bold fs-5">
-            Total {" "}
+          <div className="me-auto fw-bold fs-5">
+            الاجمالى {" "}
             {FormatCurrency(cartItems.reduce((total, cartItem) =>
             {
               const item = sections.find(i => i.id === cartItem.id);

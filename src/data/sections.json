@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "imgSrc": "https://picsum.photos/id/9/720/480",
+    "imgSrc": "https://picsum.photos/id/1/720/480",
     "title": "منتج1",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
@@ -13,7 +13,7 @@
     "title": "منتج2",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
-    "category":"two"
+    "category":"one"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "title": "منتج3",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
-    "category":"three"
+    "category":"one"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "title": "منتج4",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
-    "category":"four"
+    "category":"two"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "title": "منتج5",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
-    "category":"five"
+    "category":"two"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "title": "منتج6",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
-    "category":"six"
+    "category":"three"
   },
   {
     "id": 7,
@@ -53,12 +53,92 @@
     "title": "منتج7",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
-    "category":"seven"
+    "category":"four"
   },
   {
     "id": 8,
-    "imgSrc": "https://picsum.photos/id/7/720/480",
-    "title": "منتج7",
+    "imgSrc": "https://picsum.photos/id/8/720/480",
+    "title": "منتج8",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"four"
+  },
+  {
+    "id": 9,
+    "imgSrc": "https://picsum.photos/id/9/720/480",
+    "title": "منتج9",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"four"
+  },
+  {
+    "id": 10,
+    "imgSrc": "https://picsum.photos/id/10/720/480",
+    "title": "منتج10",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"five"
+  },
+  {
+    "id": 11,
+    "imgSrc": "https://picsum.photos/id/11/720/480",
+    "title": "منتج11",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"six"
+  },
+  {
+    "id": 12,
+    "imgSrc": "https://picsum.photos/id/12/720/480",
+    "title": "منتج12",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"six"
+  },
+  {
+    "id": 13,
+    "imgSrc": "https://picsum.photos/id/13/720/480",
+    "title": "منتج13",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"seven"
+  },
+  {
+    "id": 15,
+    "imgSrc": "https://picsum.photos/id/15/720/480",
+    "title": "منتج15",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"eight"
+  },
+  {
+    "id": 16,
+    "imgSrc": "https://picsum.photos/id/16/720/480",
+    "title": "منتج16",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"eight"
+  },
+  {
+    "id": 17,
+    "imgSrc": "https://picsum.photos/id/17/720/480",
+    "title": "منتج17",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"eight"
+  },
+  {
+    "id": 18,
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price":50,
+    "category":"eight"
+  },
+  {
+    "id": 19,
+    "imgSrc": "https://picsum.photos/id/19/720/480",
+    "title": "منتج19",
     "content": "شرح تفصيلي للمنتج",
     "price":50,
     "category":"eight"

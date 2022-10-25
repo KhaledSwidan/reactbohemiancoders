@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import sections from "../../data/sections.json";
 import StoreItem from "./StoreItem";
@@ -10,6 +10,10 @@ import PhNavSections from './PhNavSections';
 const MainPhSection = () =>
 {
   const { phSections } = styles;
+
+  const [cats, setCats] = useState(sections);
+  const filterResult = catItem => setCats(sections.filter(e => e.category === catItem));
+console.log(cats);
   return (
     <section id="phSections" className={`${phSections} cdcdcd py-5 position-relative`}>
       <Container>
@@ -18,14 +22,14 @@ const MainPhSection = () =>
           content="ابحث عن الأدوية الخاص بك وكل ما تحتاج الية بسهولة وسرعة" />
         <Row lg={3} md={2} xs={1} className="g-3">
           {
-            sections.map(e =>
+            cats.map(e =>
               <Col key={e.id}>
                 <StoreItem {...e} />
               </Col>
             )
           }
         </Row>
-        <PhNavSections />
+        <PhNavSections filterResult={filterResult} />
       </Container>
     </section>
   );

@@ -49,11 +49,11 @@
   cursor: default;
   cursor: pointer;
   font-weight: 500;
-  background-color: rgba(25 104 127 / 90%);
-  opacity: .5;
+  background-color: rgb(25 100 124 / 70%) !important;
+  opacity: .7;
   margin-bottom: 3px;
-  box-shadow: 0 0 6px #5e92a3;
 }
 .toolTip:hover{
   opacity: 1 !important;
+  background-color: rgb(25 100 124) !important
 }
