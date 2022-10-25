@@ -66,3 +66,9 @@ export const ShoppingCartProvider = ({ children }) =>
 };
 
 export const UseShoppingCart = () => useContext(ShoppingCartContext);
+
+const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
+  currency: "EGP",
+  style: "currency",
+});
+export const FormatCurrency = number => CURRENCY_FORMATTER.format(number);

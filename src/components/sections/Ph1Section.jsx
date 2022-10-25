@@ -1,17 +1,16 @@
 import React from 'react';
-import MainTitle from '../mainTitle/MainTitle';
-import styles from "./sections.module.css";
-import { UseShoppingCart } from '../../context/ShoppingCartContext';
+import { UseShoppingCart, FormatCurrency } from '../../context/ShoppingCartContext';
 import { Button, Card } from 'react-bootstrap';
+import styles from "./sections.module.css";
 
-const Ph1Section = ({id,imgSrc,title,content,price}) =>
+const Ph1Section = ({ id, imgSrc, title, content, price }) =>
 {
-  const { subSection, gall, gallBoxy, phSections } = styles;
+  const { gallBoxy } = styles;
   
   const { getItemsQuantity, increaseCartQuantity, decreaseCartQuantity, removeItemFromCart } = UseShoppingCart();
   const quantity = getItemsQuantity(id);
 
-  const medicineBox =
+  return (
     <Card className={`all1 cat11 ${gallBoxy} p-0 col-sm-4 col-md-3`} key={id}>
       <Card.Img
         src={imgSrc}
@@ -62,30 +61,7 @@ const Ph1Section = ({id,imgSrc,title,content,price}) =>
           </div>
         </div>
       </Card.Body>
-    </Card>;
-
-  return (
-    <>
-      <section id="phSections" className={`${phSections} cdcdcd py-5 position-relative`}>
-
-        <div className="container">
-          <MainTitle
-            title="أقسام الصيدلية"
-            content="ابحث عن الأدوية الخاص بك وكل ما تحتاج الية بسهولة وسرعة" />
-          <div className={`${subSection} subSection-one`} id="subSection-one">
-            <h2 className="py-4 px-3 my-2 d-flex align-items-center mx-4 rounded">
-              الأدوية
-              <i className="fa-solid fa-file-prescription ms-3"></i>
-            </h2>
-            <div className="category">
-              <div className={`${gall} row`}>
-                {medicineBox}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </Card>
   );
 };
 
