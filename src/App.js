@@ -11,16 +11,24 @@ import MainPhSection from './components/sections/MainPhSection';
 import FinalBlog from './components/blog/FinalBlog';
 import FinalProducts from './components/products/FinalProducts';
 import Brands from './components/brands/Brands';
+import Offers from './components/offers/Offers';
+
 import PointsPolicy from './components/polices/PointsPolicy';
 import ShippingPolicy from './components/polices/ShippingPolicy';
 import UsagePolicy from './components/polices/UsagePolicy';
 import PrivacyPolicy from './components/polices/PrivacyPolicy';
-import Offers from './components/offers/Offers';
+
 import GeneralBlog from './components/blog/general blog/GeneralBlog';
 import FirstBlog from './components/blog/blog one/FirstBlog';
 import SecondBlog from './components/blog/blog two/SecondBlog';
 import ThirdBlog from './components/blog/blog three/ThirdBlog';
 import ForthBlog from './components/blog/blog four/ForthBlog';
+
+import SignUp from './components/registrations/SignUp';
+import LogIn from './components/registrations/LogIn';
+import ForgotPassword from './components/registrations/ForgotPassword';
+import UpdateProfile from './components/registrations/UpdateProfile';
+import Dashboard from './components/registrations/Dashboard';
 
 const App = () =>
 {
@@ -48,6 +56,12 @@ const App = () =>
         <Route path='/shippingpolicy' element={<ShippingPolicy />} />
         <Route path='/usagepolicy' element={<UsagePolicy />} />
         <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/update-profile" element={<UpdateProfile />} />
+        <Route path="/dashboard" element={<Dashboard />} />
 
         <Route path='*' element={<ErrorPage />} />
       </Routes>

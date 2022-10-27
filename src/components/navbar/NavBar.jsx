@@ -23,7 +23,7 @@ const NavBar = () =>
             <a href="tel:123456789" className='text-white ps-1'>03/578499111</a>
             <Button
               variant='outline-primary'
-              className='rounded ms-3 text-white'
+              className='rounded ms-2 text-white'
               style={{ width: "3rem", height: "3rem", position: "relative" }}
               onClick={openCart}>
               <svg
@@ -47,6 +47,8 @@ const NavBar = () =>
                 {cartQuantity}
               </div>
             </Button>
+            <Link to="dashboard" className='text-white'><i className="fa-solid fa-user ms-3"></i></Link>
+            <Link to="signup" className='ms-2 text-white'><i className="fa-solid fa-right-to-bracket mx-2"></i></Link>
           </div>
         </div>
         <div className="container">
