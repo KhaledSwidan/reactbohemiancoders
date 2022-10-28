@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap';
-import { UseShoppingCart, FormatCurrency } from './ShoppingCartContext';
+import { UseShoppingCart, FormatCurrency } from '../../context/ShoppingCartContext';
 
 const StoreItem = ({ id, price, title, imgSrc, content }) =>
 {

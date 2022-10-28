@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Stack } from 'react-bootstrap';
 import sections from '../../data/sections.json';
-import { UseShoppingCart, FormatCurrency } from "./ShoppingCartContext";
+import { UseShoppingCart, FormatCurrency } from "../../context/ShoppingCartContext";
 
 const CartItem = ({ id, quantity }) =>
 {

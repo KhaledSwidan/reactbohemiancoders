@@ -1,10 +1,13 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { UseShoppingCart } from '../../context/ShoppingCartContext';
+
 import siteLogo from "../imgs/siteLogo.webp";
-import { UseShoppingCart } from '../sections/ShoppingCartContext';
 import styles from "./fullnavbar.module.css";
+
 import SideNavBar from './SideNavBar';
+import ProfileNav from './ProfileNav';
 
 const NavBar = () =>
 {
@@ -47,8 +50,7 @@ const NavBar = () =>
                 {cartQuantity}
               </div>
             </Button>
-            <Link to="dashboard" className='text-white'><i className="fa-solid fa-user ms-3"></i></Link>
-            <Link to="signup" className='ms-2 text-white'><i className="fa-solid fa-right-to-bracket mx-2"></i></Link>
+          <ProfileNav/>
           </div>
         </div>
         <div className="container">

@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+
 import "./index.css";
 
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
@@ -15,7 +16,7 @@ root.render(
     <Router>
       <App />
     </Router>
-  </React.StrictMode>
+  </React.StrictMode >
 );
 
 // If you want to start measuring performance in your app, pass a function
