@@ -82,5 +82,4 @@ const App = () =>
     </ShoppingCartProvider>
   );
 };
-
-export default App
+export default App;
