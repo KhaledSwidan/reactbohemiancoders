@@ -18,7 +18,7 @@ const ProfileNav = () =>
               <i className="fa-solid fa-clipboard-check"></i>
             </Dropdown.Item>
             <NavDropdown.Divider />
-            <Dropdown.ItemText className="text-center">تمتع بحسابك الطبي</Dropdown.ItemText>
+            <Dropdown.ItemText className="text-center p-0">تمتع بحسابك الطبي</Dropdown.ItemText>
           </Dropdown.Menu>
         </Dropdown>
       </Button>
