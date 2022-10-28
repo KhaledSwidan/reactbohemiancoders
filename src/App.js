@@ -30,6 +30,7 @@ import ForgotPassword from './components/profile/ForgotPassword';
 import UpdateProfile from './components/profile/UpdateProfile';
 import Dashboard from './components/profile/Dashboard';
 import WishList from './components/profile/WishList';
+
 import { AuthProvider } from './context/AuthContext';
 import { RequireAuth } from './context/RequireAuth';
 
