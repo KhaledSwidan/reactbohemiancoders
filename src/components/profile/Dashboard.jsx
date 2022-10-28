@@ -26,16 +26,16 @@ const Dashboard = () =>
           <h2 className='text-center mb-4'>الصفحة الشخصية</h2>
           {error && <Alert variant='danger'>{error}</Alert>}
           <strong>البريد الالكتروني: </strong>{currentUser && currentUser.email}
-          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-            تحديث الصفحة الشخصية
-          </Link>
+          <div className="mt-2 text-center d-flex justify-content-between align-items-center flex-wrap">
+            <Link to="/update-profile" className="btn btn-primary mt-3">
+              تحديث الصفحة الشخصية
+            </Link>
+            <Button className="btn btn-danger mt-3" onClick={handleLogout}>
+              خروج
+            </Button>
+          </div>
         </Card.Body>
       </Card>
-      <div className="mt-2 text-center w-100 d-flex">
-        <Button className="btn btn-danger w-25" onClick={handleLogout}>
-          خروج
-        </Button>
-      </div>
     </Container>
   );
 };

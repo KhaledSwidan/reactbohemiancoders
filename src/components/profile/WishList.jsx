@@ -1,8 +1,14 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const WishList = () => {
   return (
-    <div>WishList</div>
+    <>
+      {/* <Container>
+        <MainTitle 
+        title=""
+      </Container> */}
+    </>
   )
 }
 

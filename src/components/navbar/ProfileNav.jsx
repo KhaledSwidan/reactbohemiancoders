@@ -13,24 +13,8 @@ const ProfileNav = () =>
         <Dropdown as={NavItem}>
           <Dropdown.Toggle as={NavLink} className="text-white"><i className="fa-solid fa-gear"></i></Dropdown.Toggle>
           <Dropdown.Menu className={`${dropmenu}`}>
-            <Dropdown.Item as={Link} to="wishlist" className={`${dropitm}`}>
-              قائمة المفضلة
-              <i className="fa-solid fa-clipboard-check"></i>
-            </Dropdown.Item>
-            <Dropdown.Item as={Link} to="signup" className={`${dropitm}`}>
-              Sign Up
-              <i className="fa-solid fa-clipboard-check"></i>
-            </Dropdown.Item>
             <Dropdown.Item as={Link} to="login" className={`${dropitm}`}>
               Log In
-              <i className="fa-solid fa-clipboard-check"></i>
-            </Dropdown.Item>
-            <Dropdown.Item as={Link} to="forgot-password" className={`${dropitm}`}>
-              Forgot Password
-              <i className="fa-solid fa-clipboard-check"></i>
-            </Dropdown.Item>
-            <Dropdown.Item as={Link} to="update-profile" className={`${dropitm}`}>
-              Update Profile
               <i className="fa-solid fa-clipboard-check"></i>
             </Dropdown.Item>
             <NavDropdown.Divider />
