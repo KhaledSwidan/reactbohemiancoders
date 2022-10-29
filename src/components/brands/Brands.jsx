@@ -1,24 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainTitle from "../mainTitle/MainTitle";
 import styles from "./brands.module.css";
-import OffCanvBrand from './OffCanvBrand';
+import NavBarBrands from './NavBarBrands';
+import brands from "../../data/brands.json"
+import { Col, Container, Row } from 'react-bootstrap';
+import StoreItem from './StoreItem';
 
 const Brands = () =>
 {
-  const { brands } = styles;
+  const { brnds } = styles;
+  const [branditm, setBranditm] = useState(brands);
+  const filterResult = slectedChar => setBranditm(brands.filter(e => e.char === slectedChar));
+
   return (
     <>
-      <section className={`${brands} px-3 py-5 text-center`}>
-        <div className="container">
+      <section className={`${brnds} px-3 py-4 text-center`}>
+        <Container>
           <MainTitle title="العلامات التجارية"
             content="تسوق واختار العلامة التجارية المضلة لك وتعرف على أحدث
           المنتجات والعروض والخصومات"/>
-          <div className="row">
-            <div className="row d-flex align-items-center justify-content-center" id="boxBrand">
-              <OffCanvBrand />
-            </div>
-          </div>
-        </div>
+          <Container>
+            <NavBarBrands filterResult={filterResult} />
+          </Container>
+          <Row lg={3} md={2} xs={1} className="g-3 mt-2">
+          {
+            branditm.map(e =>
+              <Col key={e.id}>
+                <StoreItem {...e} />
+              </Col>
+            )
+          }
+          </Row>
+        </Container>
       </section>
     </>
   );

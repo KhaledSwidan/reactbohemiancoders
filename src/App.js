@@ -31,6 +31,10 @@ import UpdateProfile from './components/profile/UpdateProfile';
 import Dashboard from './components/profile/Dashboard';
 import WishList from './components/profile/WishList';
 
+import NormalRosheta from './components/rosheta/rosheta normal/NormalRosheta';
+import ContractRosheta from './components/rosheta/rosheta contract/ContractRosheta';
+import NoRosheta from './components/rosheta/rosheta not exist/NoRosheta';
+
 import { AuthProvider } from './context/AuthContext';
 import { RequireAuth } from './context/RequireAuth';
 
@@ -53,6 +57,10 @@ const App = () =>
             <Route path='thirdblog' element={<ThirdBlog />} />
             <Route path='forthblog' element={<ForthBlog />} />
           </Route>
+
+          <Route path="/normalrosheta" element={<NormalRosheta />} />
+          <Route path="/contractrosheta" element={<ContractRosheta />} />
+          <Route path="/norosheta" element={<NoRosheta />} />
 
           <Route path='/products' element={<FinalProducts />} />
           <Route path='/offers' element={<Offers />} />

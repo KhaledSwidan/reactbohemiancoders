@@ -3,7 +3,7 @@ import styles from "./sections.module.css";
 import { Button } from 'react-bootstrap';
 
 
-const PhNavSections = ({filterResult}) =>
+const PhNavSections = ({ filterResult }) =>
 {
   const { toolTip, navBullets } = styles;
 

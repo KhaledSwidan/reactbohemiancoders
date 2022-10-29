@@ -13,7 +13,7 @@ const MainPhSection = () =>
 
   const [cats, setCats] = useState(sections);
   const filterResult = catItem => setCats(sections.filter(e => e.category === catItem));
-console.log(cats);
+  
   return (
     <section id="phSections" className={`${phSections} cdcdcd py-5 position-relative`}>
       <Container>

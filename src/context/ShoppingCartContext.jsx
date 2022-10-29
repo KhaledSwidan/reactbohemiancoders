@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import ShoppingCart from '../components/sections/ShoppingCart';
+import BrandsCart from '../components/brands/BrandsCart';
 
 export const ShoppingCartContext = createContext({});
 
@@ -13,6 +14,7 @@ export const ShoppingCartProvider = ({ children }) =>
   const closeCart = () => setIsOpen(false);
 
   const [cartItems, setCartItems] = useState(initialCartItems);
+
   const getItemsQuantity = id => cartItems.find(e => e.id === id)?.quantity || 0;
   const increaseCartQuantity = id => setCartItems(
     currItems =>
@@ -61,6 +63,7 @@ export const ShoppingCartProvider = ({ children }) =>
       }}>
       {children}
       <ShoppingCart isOpen={isOpen} />
+      <BrandsCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };
