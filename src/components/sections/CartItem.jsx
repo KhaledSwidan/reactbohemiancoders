@@ -9,6 +9,7 @@ const CartItem = ({ id, quantity }) =>
 
   const item = sections.find(i => i.id === id);
   if (item == null) return null;
+  console.log(item);
 
   return (
     <Stack direction='horizontal' gap={2} className="d-flex align-items-center">

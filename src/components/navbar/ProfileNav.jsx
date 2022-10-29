@@ -14,7 +14,7 @@ const ProfileNav = () =>
           <Dropdown.Toggle as={NavLink} className="text-white"><i className="fa-solid fa-gear"></i></Dropdown.Toggle>
           <Dropdown.Menu className={`${dropmenu}`}>
             <Dropdown.Item as={Link} to="login" className={`${dropitm}`}>
-              Log In
+              تسجيل دخول
               <i className="fa-solid fa-clipboard-check"></i>
             </Dropdown.Item>
             <NavDropdown.Divider />

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap';
-import { UseShoppingCart, FormatCurrency } from '../../context/ShoppingCartContext';
+import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
 
 const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSrc }) =>
 {
-  const { getItemsQuantity, increaseCartQuantity, decreaseCartQuantity, removeItemFromCart } = UseShoppingCart();
-  const quantity = getItemsQuantity(id);
+  const { getBrandItemsQuantity, increaseBrandCartQuantity, decreaseBrandCartQuantity, removeBrandFromCart } = UseBrandingCart();
+  const quantity = getBrandItemsQuantity(id);
   
   return (
     <Card className="h-100">
@@ -21,16 +21,16 @@ const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSr
         <div className="mt-auto">
           {
             quantity === 0 ?
-              (<Button onClick={() => increaseCartQuantity(id)} className="w-100">
+              (<Button onClick={() => increaseBrandCartQuantity(id)} className="w-100">
                 اضافة الى السلة
               </Button>) :
               (<div className="d-flex align-items-center flex-column" style={{ gap: ".5rem" }}>
                 <div className='d-flex justify-content-center align-items-center' style={{ gap: ".5rem" }}>
-                  <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                  <Button onClick={() => increaseBrandCartQuantity(id)}>+</Button>
                   <span>عدد القطع: {quantity}</span>
-                  <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                  <Button onClick={() => decreaseBrandCartQuantity(id)}>-</Button>
                 </div>
-                <Button onClick={() => removeItemFromCart(id)} variant='danger' size="sm">
+                <Button onClick={() => removeBrandFromCart(id)} variant='danger' size="sm">
                   ازالة من السلة
                 </Button>
               </div>)

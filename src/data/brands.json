@@ -1,7 +1,7 @@
 [
   {
     "char": "a",
-    "id": 1,
+    "id": "brnd1",
     "brandName": "ACM",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -10,7 +10,7 @@
   },
   {
     "char": "a",
-    "id": 2,
+    "id": "brnd2",
     "brandName": "Aroma",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -19,7 +19,7 @@
   },
   {
     "char": "a",
-    "id": 3,
+    "id": "brnd3",
     "brandName": "Africana",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -28,7 +28,7 @@
   },
   {
     "char": "a",
-    "id": 4,
+    "id": "brnd4",
     "brandName": "Argan Z",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -37,7 +37,7 @@
   },
   {
     "char": "a",
-    "id": 5,
+    "id": "brnd5",
     "brandName": "Anivagene",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -46,7 +46,7 @@
   },
   {
     "char": "a",
-    "id": 6,
+    "id": "brnd6",
     "brandName": "Always",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -55,7 +55,7 @@
   },
   {
     "char": "a",
-    "id": 7,
+    "id": "brnd7",
     "brandName": "Amma Care",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -64,7 +64,7 @@
   },
   {
     "char": "a",
-    "id": 8,
+    "id": "brnd8",
     "brandName": "Avene",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -73,7 +73,7 @@
   },
   {
     "char": "a",
-    "id": 9,
+    "id": "brnd9",
     "brandName": "Avent",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -82,7 +82,7 @@
   },
   {
     "char": "b",
-    "id": 10,
+    "id": "brnd10",
     "brandName": "B.Neotra",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -91,7 +91,7 @@
   },
   {
     "char": "b",
-    "id": 11,
+    "id": "brnd11",
     "brandName": "Baby Joy",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -100,7 +100,7 @@
   },
   {
     "char": "b",
-    "id": 12,
+    "id": "brnd12",
     "brandName": "Bel Clinic",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -109,7 +109,7 @@
   },
   {
     "char": "b",
-    "id": 13,
+    "id": "brnd13",
     "brandName": "Beurer",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -118,7 +118,7 @@
   },
   {
     "char": "b",
-    "id": 14,
+    "id": "brnd14",
     "brandName": "Bio Balance",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -127,7 +127,7 @@
   },
   {
     "char": "b",
-    "id": 15,
+    "id": "brnd15",
     "brandName": "Bio Organic",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -136,7 +136,7 @@
   },
   {
     "char": "b",
-    "id": 16,
+    "id": "brnd16",
     "brandName": "Bio-Derma",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -145,7 +145,7 @@
   },
   {
     "char": "b",
-    "id": 17,
+    "id": "brnd17",
     "brandName": "Bless",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -154,7 +154,7 @@
   },
   {
     "char": "b",
-    "id": 18,
+    "id": "brnd18",
     "brandName": "Braun",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -163,7 +163,7 @@
   },
   {
     "char": "b",
-    "id": 19,
+    "id": "brnd19",
     "brandName": "Bubblzz",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -172,7 +172,7 @@
   },
   {
     "char": "c",
-    "id": 20,
+    "id": "brnd20",
     "brandName": "CHI",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -181,7 +181,7 @@
   },
   {
     "char": "c",
-    "id": 21,
+    "id": "brnd21",
     "brandName": "Clean & Clear",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -190,7 +190,7 @@
   },
   {
     "char": "c",
-    "id": 22,
+    "id": "brnd22",
     "brandName": "Clear",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -199,7 +199,7 @@
   },
   {
     "char": "c",
-    "id": 23,
+    "id": "brnd23",
     "brandName": "CLEO",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -208,7 +208,7 @@
   },
   {
     "char": "d",
-    "id": 24,
+    "id": "brnd24",
     "brandName": "Dabur Amla",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -217,7 +217,7 @@
   },
   {
     "char": "d",
-    "id": 25,
+    "id": "brnd25",
     "brandName": "DAX",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -226,7 +226,7 @@
   },
   {
     "char": "d",
-    "id": 26,
+    "id": "brnd26",
     "brandName": "Dermatique",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -235,7 +235,7 @@
   },
   {
     "char": "d",
-    "id": 27,
+    "id": "brnd27",
     "brandName": "Dove",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -244,7 +244,7 @@
   },
   {
     "char": "d",
-    "id": 28,
+    "id": "brnd28",
     "brandName": "Dr Brown",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -253,7 +253,7 @@
   },
   {
     "char": "d",
-    "id": 29,
+    "id": "brnd29",
     "brandName": "Ducray",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -262,7 +262,7 @@
   },
   {
     "char": "d",
-    "id": 30,
+    "id": "brnd30",
     "brandName": "Durex",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -271,7 +271,7 @@
   },
   {
     "char": "e",
-    "id": 31,
+    "id": "brnd31",
     "brandName": "Easy Care",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -280,7 +280,7 @@
   },
   {
     "char": "e",
-    "id": 32,
+    "id": "brnd32",
     "brandName": "ECO",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -289,7 +289,7 @@
   },
   {
     "char": "e",
-    "id": 33,
+    "id": "brnd33",
     "brandName": "Enliven",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -298,7 +298,7 @@
   },
   {
     "char": "e",
-    "id": 34,
+    "id": "brnd34",
     "brandName": "EVA",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -307,7 +307,7 @@
   },
   {
     "char": "f",
-    "id": 35,
+    "id": "brnd35",
     "brandName": "Fine Care",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -316,7 +316,7 @@
   },
   {
     "char": "g",
-    "id": 36,
+    "id": "brnd36",
     "brandName": "Garnier",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -325,7 +325,7 @@
   },
   {
     "char": "g",
-    "id": 37,
+    "id": "brnd37",
     "brandName": "Gillette",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -334,7 +334,7 @@
   },
   {
     "char": "g",
-    "id": 38,
+    "id": "brnd38",
     "brandName": "GK Keratin",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -343,7 +343,7 @@
   },
   {
     "char": "g",
-    "id": 39,
+    "id": "brnd39",
     "brandName": "Gliss",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -352,7 +352,7 @@
   },
   {
     "char": "g",
-    "id": 40,
+    "id": "brnd40",
     "brandName": "Glysolid",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -361,7 +361,7 @@
   },
   {
     "char": "h",
-    "id": 41,
+    "id": "brnd41",
     "brandName": "Hayah",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -370,7 +370,7 @@
   },
   {
     "char": "h",
-    "id": 42,
+    "id": "brnd42",
     "brandName": "Head & Shoulders",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -379,7 +379,7 @@
   },
   {
     "char": "h",
-    "id": 43,
+    "id": "brnd43",
     "brandName": "Herbal",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -388,7 +388,7 @@
   },
   {
     "char": "i",
-    "id": 44,
+    "id": "brnd44",
     "brandName": "IDEAL",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -397,7 +397,7 @@
   },
   {
     "char": "i",
-    "id": 45,
+    "id": "brnd45",
     "brandName": "ISIS",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -406,7 +406,7 @@
   },
   {
     "char": "i",
-    "id": 46,
+    "id": "brnd46",
     "brandName": "Infinity",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -415,7 +415,7 @@
   },
   {
     "char": "j",
-    "id": 47,
+    "id": "brnd47",
     "brandName": "J&J",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -424,7 +424,7 @@
   },
   {
     "char": "k",
-    "id": 48,
+    "id": "brnd48",
     "brandName": "Kaminomoto",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -433,7 +433,7 @@
   },
   {
     "char": "k",
-    "id": 49,
+    "id": "brnd49",
     "brandName": "Korloff",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -442,7 +442,7 @@
   },
   {
     "char": "l",
-    "id": 50,
+    "id": "brnd50",
     "brandName": "La Roche",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -451,7 +451,7 @@
   },
   {
     "char": "l",
-    "id": 51,
+    "id": "brnd51",
     "brandName": "Labello",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -460,7 +460,7 @@
   },
   {
     "char": "l",
-    "id": 52,
+    "id": "brnd52",
     "brandName": "LifeBuoy",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -469,7 +469,7 @@
   },
   {
     "char": "l",
-    "id": 53,
+    "id": "brnd53",
     "brandName": "Loreal",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -478,7 +478,7 @@
   },
   {
     "char": "l",
-    "id": 54,
+    "id": "brnd54",
     "brandName": "Lux",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -487,7 +487,7 @@
   },
   {
     "char": "m",
-    "id": 55,
+    "id": "brnd55",
     "brandName": "Mustela",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -496,7 +496,7 @@
   },
   {
     "char": "n",
-    "id": 56,
+    "id": "brnd56",
     "brandName": "Neutrogena",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -505,7 +505,7 @@
   },
   {
     "char": "n",
-    "id": 57,
+    "id": "brnd57",
     "brandName": "Nike",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -514,7 +514,7 @@
   },
   {
     "char": "n",
-    "id": 58,
+    "id": "brnd58",
     "brandName": "Nivea",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -523,7 +523,7 @@
   },
   {
     "char": "n",
-    "id": 59,
+    "id": "brnd59",
     "brandName": "Nuby",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -532,7 +532,7 @@
   },
   {
     "char": "n",
-    "id": 60,
+    "id": "brnd60",
     "brandName": "NUXE",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -541,7 +541,7 @@
   },
   {
     "char": "o",
-    "id": 61,
+    "id": "brnd61",
     "brandName": "OLAY",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -550,7 +550,7 @@
   },
   {
     "char": "o",
-    "id": 62,
+    "id": "brnd62",
     "brandName": "ORAL-B",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -559,7 +559,7 @@
   },
   {
     "char": "o",
-    "id": 63,
+    "id": "brnd63",
     "brandName": "ORANGE DAILY",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -568,7 +568,7 @@
   },
   {
     "char": "o",
-    "id": 64,
+    "id": "brnd64",
     "brandName": "ORS",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -577,7 +577,7 @@
   },
   {
     "char": "o",
-    "id": 65,
+    "id": "brnd65",
     "brandName": "Organic SPA",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -586,7 +586,7 @@
   },
   {
     "char": "p",
-    "id": 66,
+    "id": "brnd66",
     "brandName": "Palmer's",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -595,7 +595,7 @@
   },
   {
     "char": "p",
-    "id": 67,
+    "id": "brnd67",
     "brandName": "Pampers",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -604,7 +604,7 @@
   },
   {
     "char": "p",
-    "id": 68,
+    "id": "brnd68",
     "brandName": "Pantene",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -613,7 +613,7 @@
   },
   {
     "char": "p",
-    "id": 69,
+    "id": "brnd69",
     "brandName": "Penduline",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -622,7 +622,7 @@
   },
   {
     "char": "p",
-    "id": 70,
+    "id": "brnd70",
     "brandName": "Pharmaceris",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -631,7 +631,7 @@
   },
   {
     "char": "p",
-    "id": 71,
+    "id": "brnd71",
     "brandName": "Philips",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -640,7 +640,7 @@
   },
   {
     "char": "r",
-    "id": 72,
+    "id": "brnd72",
     "brandName": "Rexsol",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -649,7 +649,7 @@
   },
   {
     "char": "r",
-    "id": 73,
+    "id": "brnd73",
     "brandName": "Rilastil",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -658,7 +658,7 @@
   },
   {
     "char": "s",
-    "id": 74,
+    "id": "brnd74",
     "brandName": "Sandacare",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -667,7 +667,7 @@
   },
   {
     "char": "s",
-    "id": 75,
+    "id": "brnd75",
     "brandName": "Sanosan",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -676,7 +676,7 @@
   },
   {
     "char": "s",
-    "id": 76,
+    "id": "brnd76",
     "brandName": "Skin Code",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -685,7 +685,7 @@
   },
   {
     "char": "s",
-    "id": 77,
+    "id": "brnd77",
     "brandName": "Sunsilk",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -694,7 +694,7 @@
   },
   {
     "char": "s",
-    "id": 78,
+    "id": "brnd78",
     "brandName": "SVR",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -703,7 +703,7 @@
   },
   {
     "char": "t",
-    "id": 79,
+    "id": "brnd79",
     "brandName": "Topicrem",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -712,7 +712,7 @@
   },
   {
     "char": "t",
-    "id": 80,
+    "id": "brnd80",
     "brandName": "Tresemme",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -721,7 +721,7 @@
   },
   {
     "char": "t",
-    "id": 81,
+    "id": "brnd81",
     "brandName": "Trichup",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -730,7 +730,7 @@
   },
   {
     "char": "u",
-    "id": 82,
+    "id": "brnd82",
     "brandName": "URIAGE",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -739,7 +739,7 @@
   },
   {
     "char": "v",
-    "id": 83,
+    "id": "brnd83",
     "brandName": "Vatika",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -748,7 +748,7 @@
   },
   {
     "char": "v",
-    "id": 84,
+    "id": "brnd84",
     "brandName": "VICHY",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -757,7 +757,7 @@
   },
   {
     "char": "y",
-    "id": 85,
+    "id": "brnd85",
     "brandName": "Yves Rocher",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
@@ -766,7 +766,7 @@
   },
   {
     "char": "z",
-    "id": 86,
+    "id": "brnd86",
     "brandName": "Zero Frizz",
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",

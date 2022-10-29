@@ -34,14 +34,16 @@
 }
 .dropmenu{
   background-color: #5e92a3 !important;
-  transform: translate(-75%, 15%) !important;
+  padding-top: 0 !important;
 }
 .dropitm{
   color: #e1f0f5 !important;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+  background-color: transparent !important;
+  border: none !important;
 }
-.dropitm:hover{color: #090e10 !important}
+.dropitm:hover{background-color: #173c49 !important;}
 .dropitm.active,
 .dropitm:active{background-color: #19647c !important;}

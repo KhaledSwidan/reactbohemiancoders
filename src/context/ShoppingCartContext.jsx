@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import ShoppingCart from '../components/sections/ShoppingCart';
-import BrandsCart from '../components/brands/BrandsCart';
 
 export const ShoppingCartContext = createContext({});
 
@@ -63,7 +62,6 @@ export const ShoppingCartProvider = ({ children }) =>
       }}>
       {children}
       <ShoppingCart isOpen={isOpen} />
-      <BrandsCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };
