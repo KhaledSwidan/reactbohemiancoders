@@ -2,7 +2,8 @@ const brands = [
   {
     "char": "a",
     "id": "brnd1",
-    "brandName": "ACM",
+    "brand":"ACM",
+    "brandName": "Sebionex trio anti-imperfections cream 40ml",
     "brandDetails": {
       brand: "Sebionex",
       itemForm: "Cream",

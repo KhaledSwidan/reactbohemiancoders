@@ -21,29 +21,10 @@ const ProfileNav = () =>
           </Dropdown.Toggle>
           <Dropdown.Menu className={`${dropmenu}`}>
             <Dropdown.Item
-              className={`${dropitm} w-100 mb-3`}
-              style={{ position: "relative" }}
-              onClick={openBrandCart}>
-                سلة المنتجات التجميلية
-              <div
-                className="bg-danger rounded-circle d-flex justify-content-center align-items-center"
-                style={{
-                  color: "#fff",
-                  position: "absolute",
-                  bottom: "8px",
-                  left: "-18px",
-                  width: "1.5rem",
-                  height: "1.5rem",
-                  transform: "translate(25%, 25%)"
-                }}>
-                {brandCartQuantity}
-              </div>
-            </Dropdown.Item>
-            <Dropdown.Item
               className={`${dropitm} w-100`}
               style={{ position: "relative" }}
               onClick={openCart}>
-                سلة المنتجات الدوائية
+              سلة المنتجات الدوائية
               <div
                 className="bg-danger rounded-circle d-flex justify-content-center align-items-center"
                 style={{
@@ -56,6 +37,25 @@ const ProfileNav = () =>
                   transform: "translate(25%, 25%)"
                 }}>
                 {cartQuantity}
+              </div>
+            </Dropdown.Item>
+            <Dropdown.Item
+              className={`${dropitm} w-100 mb-3`}
+              style={{ position: "relative" }}
+              onClick={openBrandCart}>
+              سلة المنتجات التجميلية
+              <div
+                className="bg-danger rounded-circle d-flex justify-content-center align-items-center"
+                style={{
+                  color: "#fff",
+                  position: "absolute",
+                  bottom: "8px",
+                  left: "-18px",
+                  width: "1.5rem",
+                  height: "1.5rem",
+                  transform: "translate(25%, 25%)"
+                }}>
+                {brandCartQuantity}
               </div>
             </Dropdown.Item>
             <NavDropdown.Divider />

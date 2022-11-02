@@ -7,7 +7,6 @@ import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartConte
 const ShoppingCart = ({ isOpen }) =>
 {
   const { brandItems, closeBrandCart } = UseBrandingCart();
-  console.log(brandItems);
   
   return (
     <Offcanvas show={isOpen} onHide={closeBrandCart} placement="start">
