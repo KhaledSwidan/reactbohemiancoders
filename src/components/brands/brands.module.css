@@ -46,3 +46,16 @@
 .brndNav button{
   background-color: #19647c !important;
 }
+.ask{
+  display: flex;
+  flex-direction: column;
+  direction: ltr;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.ask div{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.ask div span{margin-left: 10px;}

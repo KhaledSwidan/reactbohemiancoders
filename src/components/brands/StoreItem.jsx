@@ -1,11 +1,15 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap';
+import styles from "./brands.module.css"
 import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
 
 const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSrc }) =>
 {
+  const { ask } = styles;
+
   const { getBrandItemsQuantity, increaseBrandCartQuantity, decreaseBrandCartQuantity, removeBrandFromCart } = UseBrandingCart();
   const quantity = getBrandItemsQuantity(id);
+
   
   return (
     <Card className="h-100">
@@ -14,9 +18,10 @@ const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSr
         variant="top"
         style={{ height: "200px", objectFit: "contain" }} />
       <Card.Body>
-        <Card.Title className="d-flex justify-content-between align-items-baseline">
+        <Card.Title className="d-flex flex-column justify-content-center align-items-end">
           <span className='fs-2'>{brandName}</span>
-          <span className='text-muted me-2'>{FormatCurrency(price)}</span>
+          <span className='text-muted'>{FormatCurrency(price)}</span>
+          <span dir='ltr'>Customer reviews: <i className="fa-solid fa-star" style={{color:"orange"}} ></i></span>
         </Card.Title>
         <div className="mt-auto">
           {
@@ -35,6 +40,7 @@ const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSr
                 </Button>
               </div>)
           }
+          <Button type="button" className="btn btn-secondary mt-2 w-100">اضافة الى المفضلة</Button>
           <Button type="button" className="btn btn-info mt-2 w-100" data-bs-toggle="modal"
             data-bs-target={`#${brandName}${id}`}>
             اسأل الصيدلي
@@ -43,10 +49,25 @@ const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSr
             aria-hidden="true">
             <div className="modal-dialog">
               <div className="modal-content">
-                <div className="modal-header">
+                <div className="modal-header justify-content-end">
                   <h5 className="modal-title" id={`${brandName}${id}Label`}>{brandName}</h5>
                 </div>
-                <div className="modal-body">{brandDetails}</div>
+                <div className="modal-body">
+                  <div className={ask}>
+                    <div><h5>Brand: </h5><span>{brandDetails.brand}</span></div>
+                    <div><h5>Item Form: </h5><span>{brandDetails.itemForm}</span></div>
+                    <div><h5>Category Type: </h5><span>{brandDetails.categoryType}</span></div>
+                    <div><h5>Recommended Use: </h5><span>{brandDetails.recommendedUse}</span></div>
+                    <div><h5>Number of Items: </h5><span>{brandDetails.numberOfItems}</span></div>
+                    <div><h5>Suitable Skin Type: </h5><span>{brandDetails.skinType}</span></div>
+                    <div><h5>Item Volume: </h5><span>{brandDetails.itemVolume}</span></div>
+                    <div><h5>Item Weight: </h5><span>{brandDetails.itemWeight}</span></div>
+                    <div><h5>Item Dimensions LxWxH: </h5><span>{brandDetails.itemDimensions}</span></div>
+                  </div>
+                  <hr />
+                  <h5>About this item</h5>
+                  <p className="text-end">{brandDetails.aboutItem}</p>
+                </div>
                 <div className="modal-footer flex-row-reverse justify-content-between">
                   <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
                   <button type="button" className="btn btn-primary">تحدث لصيدلي</button>

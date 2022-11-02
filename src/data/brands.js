@@ -3,7 +3,18 @@ const brands = [
     "char": "a",
     "id": "brnd1",
     "brandName": "ACM",
-    "brandDetails": "معلومات عن المنتج",
+    "brandDetails": {
+      brand: "Sebionex",
+      itemForm: "Cream",
+      categoryType: "Face",
+      recommendedUse : "Moisturiser",
+      numberOfItems: 1,
+      skinType: "All Skin Type",
+      itemVolume: "40 Milliliters",
+      itemWeight: "0.05 Kilograms",
+      itemDimensions: "12.6 x 5 x 6 centimeters",
+      aboutItem: "Cream for Oily Skin with Imperfections - Face. Corrects imperfections and limits appearance. Moisturises, soothes and regulates the production of sebum. Leaves skin hydrated, smooth and purified. Good foundation for make-up"
+    },
     "updateTime": "20 / 5 / 2022",
     "price": 50,
     "imgSrc": require("../components/imgs/acm.webp")
