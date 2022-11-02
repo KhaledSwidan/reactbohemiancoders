@@ -40,8 +40,8 @@ const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSr
                 </Button>
               </div>)
           }
-          <Button type="button" className="btn btn-secondary mt-2 w-100">اضافة الى المفضلة</Button>
-          <Button type="button" className="btn btn-info mt-2 w-100" data-bs-toggle="modal"
+          <Button type="button" variant="success" className="btn mt-2 w-100">اضافة الى المفضلة</Button>
+          <Button type="button" variant="info" className="btn mt-2 w-100" data-bs-toggle="modal"
             data-bs-target={`#${brandName}${id}`}>
             اسأل الصيدلي
           </Button>
