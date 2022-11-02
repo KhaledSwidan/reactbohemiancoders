@@ -12,7 +12,7 @@ const StoreItem = ({ id, char, price, brandName, brandDetails, updateTime, imgSr
       <Card.Img
         src={imgSrc}
         variant="top"
-        style={{ height: "200px", objectFit: "cover" }} />
+        style={{ height: "200px", objectFit: "contain" }} />
       <Card.Body>
         <Card.Title className="d-flex justify-content-between align-items-baseline">
           <span className='fs-2'>{brandName}</span>

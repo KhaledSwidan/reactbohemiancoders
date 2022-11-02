@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Stack } from 'react-bootstrap';
-import brands from '../../data/brands.json';
+import brands from '../../data/brands';
 import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
 
 const BrandItem = ({ id, quantity }) =>

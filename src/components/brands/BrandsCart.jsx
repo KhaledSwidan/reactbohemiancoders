@@ -1,7 +1,7 @@
 import React from 'react'
 import { Offcanvas, Stack } from 'react-bootstrap'
 import BrandItem from './BrandItem';
-import brands from "../../data/brands.json";
+import brands from "../../data/brands";
 import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
 
 const ShoppingCart = ({ isOpen }) =>

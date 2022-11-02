@@ -7,7 +7,7 @@ import sections from "../../data/sections.json";
 const ShoppingCart = ({ isOpen }) =>
 {
   const { cartItems, closeCart } = UseShoppingCart();
-  console.log(cartItems);
+
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="start">
       <Offcanvas.Header closeButton>

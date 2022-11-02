@@ -1,4 +1,4 @@
-[
+const brands = [
   {
     "char": "a",
     "id": "brnd1",
@@ -6,7 +6,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/acm.webp")
   },
   {
     "char": "a",
@@ -15,7 +15,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/20/720/480"
+    "imgSrc": require("../components/imgs/aroma.webp")
   },
   {
     "char": "a",
@@ -24,7 +24,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/21/720/480"
+    "imgSrc": require("../components/imgs/africana.webp")
   },
   {
     "char": "a",
@@ -33,7 +33,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/22/720/480"
+    "imgSrc": require("../components/imgs/arganz.webp")
   },
   {
     "char": "a",
@@ -42,7 +42,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/23/720/480"
+    "imgSrc": require("../components/imgs/anivagene.webp")
   },
   {
     "char": "a",
@@ -51,7 +51,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/24/720/480"
+    "imgSrc": require("../components/imgs/always.webp")
   },
   {
     "char": "a",
@@ -60,7 +60,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/25/720/480"
+    "imgSrc": require("../components/imgs/ammacare.webp")
   },
   {
     "char": "a",
@@ -69,7 +69,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/26/720/480"
+    "imgSrc": require("../components/imgs/avene.webp")
   },
   {
     "char": "a",
@@ -78,7 +78,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/27/720/480"
+    "imgSrc": require("../components/imgs/avent.png")
   },
   {
     "char": "b",
@@ -87,7 +87,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/28/720/480"
+    "imgSrc": require("../components/imgs/bneotra.webp")
   },
   {
     "char": "b",
@@ -96,7 +96,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/29/720/480"
+    "imgSrc": require("../components/imgs/babyjoy.jpg")
   },
   {
     "char": "b",
@@ -105,7 +105,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/30/720/480"
+    "imgSrc": require("../components/imgs/belclinic.jpg")
   },
   {
     "char": "b",
@@ -114,7 +114,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/beurer.jpg")
   },
   {
     "char": "b",
@@ -123,7 +123,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/20/720/480"
+    "imgSrc": require("../components/imgs/biobalance.png")
   },
   {
     "char": "b",
@@ -132,7 +132,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/21/720/480"
+    "imgSrc": require("../components/imgs/bioorganic.webp")
   },
   {
     "char": "b",
@@ -141,7 +141,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/22/720/480"
+    "imgSrc": require("../components/imgs/bioderma.jpg")
   },
   {
     "char": "b",
@@ -150,7 +150,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/23/720/480"
+    "imgSrc": require("../components/imgs/bless.png")
   },
   {
     "char": "b",
@@ -159,7 +159,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/31/720/480"
+    "imgSrc": require("../components/imgs/braun.png")
   },
   {
     "char": "b",
@@ -168,7 +168,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/32/720/480"
+    "imgSrc": require("../components/imgs/bubblzz.jpg")
   },
   {
     "char": "c",
@@ -177,7 +177,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/33/720/480"
+    "imgSrc": require("../components/imgs/chi.png")
   },
   {
     "char": "c",
@@ -186,7 +186,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/34/720/480"
+    "imgSrc": require("../components/imgs/clean&clear.png")
   },
   {
     "char": "c",
@@ -195,7 +195,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/35/720/480"
+    "imgSrc": require("../components/imgs/clear.jpg")
   },
   {
     "char": "c",
@@ -204,7 +204,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/36/720/480"
+    "imgSrc": require("../components/imgs/cleo.webp")
   },
   {
     "char": "d",
@@ -213,7 +213,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/37/720/480"
+    "imgSrc": require("../components/imgs/daburamla.webp")
   },
   {
     "char": "d",
@@ -222,7 +222,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/38/720/480"
+    "imgSrc": require("../components/imgs/dax.png")
   },
   {
     "char": "d",
@@ -231,7 +231,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/39/720/480"
+    "imgSrc": require("../components/imgs/dermatique.png")
   },
   {
     "char": "d",
@@ -240,7 +240,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/40/720/480"
+    "imgSrc": require("../components/imgs/Dove.webp")
   },
   {
     "char": "d",
@@ -249,7 +249,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/41/720/480"
+    "imgSrc": require("../components/imgs/drbrown.png")
   },
   {
     "char": "d",
@@ -258,7 +258,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/42/720/480"
+    "imgSrc": require("../components/imgs/ducray.webp")
   },
   {
     "char": "d",
@@ -267,7 +267,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/durex.jpg")
   },
   {
     "char": "e",
@@ -276,7 +276,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/easycare.webp")
   },
   {
     "char": "e",
@@ -285,7 +285,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/eco.webp")
   },
   {
     "char": "e",
@@ -294,7 +294,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/enliven.webp")
   },
   {
     "char": "e",
@@ -303,7 +303,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/eva.webp")
   },
   {
     "char": "f",
@@ -312,7 +312,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/finecare.webp")
   },
   {
     "char": "g",
@@ -321,7 +321,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/1/720/480"
+    "imgSrc": require("../components/imgs/garnier.webp")
   },
   {
     "char": "g",
@@ -330,7 +330,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/2/720/480"
+    "imgSrc": require("../components/imgs/gillette.jpg")
   },
   {
     "char": "g",
@@ -339,7 +339,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/3/720/480"
+    "imgSrc": require("../components/imgs/gk.webp")
   },
   {
     "char": "g",
@@ -348,7 +348,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/9/720/480"
+    "imgSrc": require("../components/imgs/gliss.jpg")
   },
   {
     "char": "g",
@@ -357,7 +357,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/10/720/480"
+    "imgSrc": require("../components/imgs/glysolid.webp")
   },
   {
     "char": "h",
@@ -366,7 +366,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/11/720/480"
+    "imgSrc": require("../components/imgs/hayah.webp")
   },
   {
     "char": "h",
@@ -375,7 +375,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/12/720/480"
+    "imgSrc": require("../components/imgs/head&sholder.jpg")
   },
   {
     "char": "h",
@@ -384,7 +384,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/herbal.webp")
   },
   {
     "char": "i",
@@ -393,7 +393,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/ideal.png")
   },
   {
     "char": "i",
@@ -402,7 +402,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/isis.webp")
   },
   {
     "char": "i",
@@ -411,7 +411,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/infinity.webp")
   },
   {
     "char": "j",
@@ -420,7 +420,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/j&j.gif")
   },
   {
     "char": "k",
@@ -429,7 +429,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/kaminomoto.jpg")
   },
   {
     "char": "k",
@@ -438,7 +438,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/korloff.png")
   },
   {
     "char": "l",
@@ -447,7 +447,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/larocheposay.webp")
   },
   {
     "char": "l",
@@ -456,7 +456,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/labello.png")
   },
   {
     "char": "l",
@@ -465,7 +465,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/lifebuoy.jpg")
   },
   {
     "char": "l",
@@ -474,7 +474,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/loreal.png")
   },
   {
     "char": "l",
@@ -483,7 +483,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/lux.webp")
   },
   {
     "char": "m",
@@ -492,7 +492,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/mustella.jpg")
   },
   {
     "char": "n",
@@ -501,7 +501,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/neutgrogena.png")
   },
   {
     "char": "n",
@@ -510,7 +510,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/nike.png")
   },
   {
     "char": "n",
@@ -519,7 +519,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/nivea.png")
   },
   {
     "char": "n",
@@ -528,7 +528,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/nuby.png")
   },
   {
     "char": "n",
@@ -537,7 +537,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/nux.png")
   },
   {
     "char": "o",
@@ -546,7 +546,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/olay.webp")
   },
   {
     "char": "o",
@@ -555,7 +555,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/oralb.png")
   },
   {
     "char": "o",
@@ -564,7 +564,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/orange.png")
   },
   {
     "char": "o",
@@ -573,7 +573,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/ors.png")
   },
   {
     "char": "o",
@@ -582,7 +582,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/organicspa.jpg")
   },
   {
     "char": "p",
@@ -591,7 +591,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/palmers.png")
   },
   {
     "char": "p",
@@ -600,7 +600,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/pampers.png")
   },
   {
     "char": "p",
@@ -609,7 +609,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/pantene.png")
   },
   {
     "char": "p",
@@ -618,7 +618,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/penduline.png")
   },
   {
     "char": "p",
@@ -627,7 +627,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/pharmaceris.png")
   },
   {
     "char": "p",
@@ -636,7 +636,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/philips.png")
   },
   {
     "char": "r",
@@ -645,7 +645,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/rexsol.png")
   },
   {
     "char": "r",
@@ -654,7 +654,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/rilastil.png")
   },
   {
     "char": "s",
@@ -663,7 +663,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/sandacare.jpg")
   },
   {
     "char": "s",
@@ -672,7 +672,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/sanosan.png")
   },
   {
     "char": "s",
@@ -681,7 +681,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/skincode.jpg")
   },
   {
     "char": "s",
@@ -690,7 +690,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/sunsilk.webp")
   },
   {
     "char": "s",
@@ -699,7 +699,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/svr.png")
   },
   {
     "char": "t",
@@ -708,7 +708,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/topicream.png")
   },
   {
     "char": "t",
@@ -717,7 +717,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/tresemme.png")
   },
   {
     "char": "t",
@@ -726,7 +726,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/trichup.png")
   },
   {
     "char": "u",
@@ -735,7 +735,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/uriage.png")
   },
   {
     "char": "v",
@@ -744,7 +744,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/vatika.jpg")
   },
   {
     "char": "v",
@@ -753,7 +753,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/vichy.jpg")
   },
   {
     "char": "y",
@@ -762,7 +762,7 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/yvv.png")
   },
   {
     "char": "z",
@@ -771,6 +771,8 @@
     "brandDetails": "معلومات عن المنتج",
     "updateTime": "20 / 5 / 2022",
     "price": 50,
-    "imgSrc": "https://picsum.photos/id/19/720/480"
+    "imgSrc": require("../components/imgs/zerofrizz.png")
   }
 ]
+
+export default brands 

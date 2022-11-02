@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import MainTitle from "../mainTitle/MainTitle";
 import styles from "./brands.module.css";
 import NavBarBrands from './NavBarBrands';
-import brands from "../../data/brands.json"
+import brands from "../../data/brands"
 import { Col, Container, Row } from 'react-bootstrap';
 import StoreItem from './StoreItem';
 
