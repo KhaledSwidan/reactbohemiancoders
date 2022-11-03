@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Card } from 'react-bootstrap';
 import styles from "./brands.module.css"
 import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
+import { UseLovingCart } from '../../context/LovingCartContext';
 
 const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime, imgSrc }) =>
 {
@@ -10,6 +11,8 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
   const { getBrandItemsQuantity, increaseBrandCartQuantity, decreaseBrandCartQuantity, removeBrandFromCart } = UseBrandingCart();
   const quantity = getBrandItemsQuantity(id);
 
+  const { getLoveQuantity, increaseLove, removeLove } = UseLovingCart();
+  const loveQuantity = getLoveQuantity(id);
   
   return (
     <Card className="h-100">
@@ -25,9 +28,13 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
             <span className='text-muted mb-2'>{FormatCurrency(price)}</span>
             <span dir='ltr'>Customer reviews: <i className="fa-solid fa-star" style={{ color: "orange" }} ></i></span>
           </div>
-          <Button className={btnLove}>
-            <i className="fa-solid fa-heart fs-2"></i>
-          </Button>
+          {loveQuantity === 0 ?
+            (<Button onClick={() => increaseLove(id)} className={btnLove}>
+              <i className="fa-solid fa-heart-crack fs-2"></i>
+            </Button>) :
+            (<Button onClick={() => removeLove(id)} className={btnLove}>
+              <i className="fa-solid fa-heart fs-2"></i>
+            </Button>)}
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ?

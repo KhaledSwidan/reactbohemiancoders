@@ -38,59 +38,62 @@ import NoRosheta from './components/rosheta/rosheta not exist/NoRosheta';
 import { AuthProvider } from './context/AuthContext';
 import { RequireAuth } from './context/RequireAuth';
 import { BrandingCartProvider } from './context/BrandingCartContext';
+import { LovingCartProvider } from './context/LovingCartContext';
 
 const App = () =>
 {
   return (
-    <BrandingCartProvider>
-      <ShoppingCartProvider>
-        <NavBar />
-        <AuthProvider>
-          <Routes>
-            <Route path='/' element={<MainHome />} />
-            <Route path='/brands' element={<Brands />} />
+    <LovingCartProvider>
+      <BrandingCartProvider>
+        <ShoppingCartProvider>
+          <NavBar />
+          <AuthProvider>
+            <Routes>
+              <Route path='/' element={<MainHome />} />
+              <Route path='/brands' element={<Brands />} />
 
-            <Route path='/mainphsection' element={<MainPhSection />} />
+              <Route path='/mainphsection' element={<MainPhSection />} />
 
-            <Route path='/blogs' element={<FinalBlog />} >
-              <Route path='generalblog' element={<GeneralBlog />} />
-              <Route path='firstblog' element={<FirstBlog />} />
-              <Route path='secondblog' element={<SecondBlog />} />
-              <Route path='thirdblog' element={<ThirdBlog />} />
-              <Route path='forthblog' element={<ForthBlog />} />
-            </Route>
+              <Route path='/blogs' element={<FinalBlog />} >
+                <Route path='generalblog' element={<GeneralBlog />} />
+                <Route path='firstblog' element={<FirstBlog />} />
+                <Route path='secondblog' element={<SecondBlog />} />
+                <Route path='thirdblog' element={<ThirdBlog />} />
+                <Route path='forthblog' element={<ForthBlog />} />
+              </Route>
 
-            <Route path="/normalrosheta" element={<NormalRosheta />} />
-            <Route path="/contractrosheta" element={<ContractRosheta />} />
-            <Route path="/norosheta" element={<NoRosheta />} />
+              <Route path="/normalrosheta" element={<NormalRosheta />} />
+              <Route path="/contractrosheta" element={<ContractRosheta />} />
+              <Route path="/norosheta" element={<NoRosheta />} />
 
-            <Route path='/products' element={<FinalProducts />} />
-            <Route path='/offers' element={<Offers />} />
+              <Route path='/products' element={<FinalProducts />} />
+              <Route path='/offers' element={<Offers />} />
 
-            <Route path='/pointspolicy' element={<PointsPolicy />} />
-            <Route path='/shippingpolicy' element={<ShippingPolicy />} />
-            <Route path='/usagepolicy' element={<UsagePolicy />} />
-            <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+              <Route path='/pointspolicy' element={<PointsPolicy />} />
+              <Route path='/shippingpolicy' element={<ShippingPolicy />} />
+              <Route path='/usagepolicy' element={<UsagePolicy />} />
+              <Route path='/privacypolicy' element={<PrivacyPolicy />} />
 
-            <Route path="/dashboard" element=
-              {
-                <RequireAuth>
-                  <Dashboard />
-                </RequireAuth>
-              } />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/login" element={<LogIn />} />
-            <Route path="/wishlist" element={<WishList />} />
-            <Route path="/update-profile" element={<UpdateProfile />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/dashboard" element=
+                {
+                  <RequireAuth>
+                    <Dashboard />
+                  </RequireAuth>
+                } />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/login" element={<LogIn />} />
+              <Route path="/wishlist" element={<WishList />} />
+              <Route path="/update-profile" element={<UpdateProfile />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
 
-            <Route path='*' element={<ErrorPage />} />
-          </Routes>
-        </AuthProvider>
-        <Features />
-        <Footer />
-      </ShoppingCartProvider>
-    </BrandingCartProvider>
+              <Route path='*' element={<ErrorPage />} />
+            </Routes>
+          </AuthProvider>
+          <Features />
+          <Footer />
+        </ShoppingCartProvider>
+      </BrandingCartProvider>
+    </LovingCartProvider>
   );
 };
 export default App;
