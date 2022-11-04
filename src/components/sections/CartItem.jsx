@@ -1,10 +1,13 @@
 import React from 'react';
 import { Button, Stack } from 'react-bootstrap';
-import sections from '../../data/sections.json';
+import sections from '../../data/sections.js';
 import { UseShoppingCart, FormatCurrency } from "../../context/ShoppingCartContext";
+import styles from "../brands/brands.module.css"
 
 const CartItem = ({ id, quantity }) =>
 {
+  const { stackItem } = styles;
+
   const { removeItemFromCart } = UseShoppingCart();
 
   const item = sections.find(i => i.id === id);
@@ -12,21 +15,22 @@ const CartItem = ({ id, quantity }) =>
   console.log(item);
 
   return (
-    <Stack direction='horizontal' gap={2} className="d-flex align-items-center">
+    <Stack direction='horizontal' gap={2} className={`${stackItem} d-flex align-items-center justify-content-between`}>
       <img
         className="rounded"
         src={item.imgSrc}
         alt="cart-img"
         style={{ width: "125px", height: "75px", objectFit: "cover" }} />
       <div className='me-auto'>
-        <div>
-          {item.name} {" "}
+        <div className='text-end'>
+          {item.title} {" "}
+          <div className="text-muted" style={{ fontSize: ".75rem" }}>
           {quantity > 1 && (
             <span className="text-muted" style={{ fontSize: ".65rem" }}>
-              x{quantity}
+                عدد القطع
+                {quantity}
             </span>
-          )}
-          <div className="text-muted" style={{ fontSize: ".75rem" }}>
+          )} {" / "}
             {FormatCurrency(item.price)}
           </div>
         </div>
@@ -39,4 +43,4 @@ const CartItem = ({ id, quantity }) =>
   );
 };
 
-export default CartItem
+export default CartItem;

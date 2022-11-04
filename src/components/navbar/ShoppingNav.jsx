@@ -10,7 +10,7 @@ const ProfileNav = () =>
 
   const { openCart, cartQuantity } = UseShoppingCart();
   const { openBrandCart, brandCartQuantity } = UseBrandingCart();
-  const { openloveCart, loveCartQuantity } = UseLovingCart();
+  const { openLoveCart, loveCartQuantity } = UseLovingCart();
 
   return (
     <>
@@ -63,7 +63,7 @@ const ProfileNav = () =>
             <Dropdown.Item
               className={`${dropitm} w-100 mb-3`}
               style={{ position: "relative" }}
-              onClick={openloveCart}>
+              onClick={openLoveCart}>
               قائمة المفضلة
               <div
                 className="bg-danger rounded-circle d-flex justify-content-center align-items-center"

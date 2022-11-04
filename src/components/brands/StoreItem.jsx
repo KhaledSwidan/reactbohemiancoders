@@ -6,35 +6,45 @@ import { UseLovingCart } from '../../context/LovingCartContext';
 
 const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime, imgSrc }) =>
 {
-  const { ask, btnLove } = styles;
+  const { ask, btnLove, btnImg } = styles;
 
   const { getBrandItemsQuantity, increaseBrandCartQuantity, decreaseBrandCartQuantity, removeBrandFromCart } = UseBrandingCart();
   const quantity = getBrandItemsQuantity(id);
 
-  const { getLoveQuantity, increaseLove, removeLove } = UseLovingCart();
-  const loveQuantity = getLoveQuantity(id);
+  const { isLove, handleLove } = UseLovingCart();
   
   return (
     <Card className="h-100">
-      <Card.Img
-        src={imgSrc}
-        variant="top"
-        style={{ height: "200px", objectFit: "contain" }} />
-      <Card.Body>
+      <Button type="button" variant="light" className={`${btnImg} btn w-100`} data-bs-toggle="modal"
+        data-bs-target={`#${id}`}>
+        <Card.Img
+          src={imgSrc}
+          variant="top"
+          style={{ height: "200px", objectFit: "contain" }} />
+        <div className="modal fade" id={`${id}`} tabIndex="-1" aria-labelledby={`${id}Label`} aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header justify-content-end">
+                <Card.Img
+                  src={imgSrc}
+                  variant="top"
+                  style={{ objectFit: "contain" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Button>
+      <Card.Body style={{ display: "flex", flexDirection: "column" }}>
         <Card.Title className="d-flex flex-row-reverse justify-content-between align-items-end">
           <div className="d-flex flex-column justify-content-center align-items-end">
-            <span className='fs-2 text-end'>{brandName}</span>
-            {brand && <span className='fs-5 mt-2'>{brand}</span>}
+            <span className='h3 text-end'>{brandName}</span>
+            {brand && <span className='h6 mb-0 mt-2'>{brand}</span>}
             <span className='text-muted mb-2'>{FormatCurrency(price)}</span>
             <span dir='ltr'>Customer reviews: <i className="fa-solid fa-star" style={{ color: "orange" }} ></i></span>
           </div>
-          {loveQuantity === 0 ?
-            (<Button onClick={() => increaseLove(id)} className={btnLove}>
-              <i className="fa-solid fa-heart-crack fs-2"></i>
-            </Button>) :
-            (<Button onClick={() => removeLove(id)} className={btnLove}>
-              <i className="fa-solid fa-heart fs-2"></i>
-            </Button>)}
+          <Button onClick={handleLove} className={btnLove}>
+            {isLove ? (<i className="fa-solid fa-heart"></i>) : (<i className="fa-solid fa-heart-crack"></i>)}
+          </Button>
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ?
@@ -53,16 +63,16 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
               </Button>
             </div>)}
           <Button type="button" variant="info" className="btn mt-2 w-100" data-bs-toggle="modal"
-            data-bs-target={`#${brandName}${id}`}>
+            data-bs-target={`#${brand}${id}`}>
             اسأل الصيدلي
             <i className="fa-solid fa-circle-info ms-2"></i>
           </Button>
-          <div className="modal fade" id={`${brandName}${id}`} tabIndex="-1" aria-labelledby={`${brandName}${id}Label`}
+          <div className="modal fade" id={`${brand}${id}`} tabIndex="-1" aria-labelledby={`${brand}${id}Label`}
             aria-hidden="true">
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header justify-content-end">
-                  <h5 className="modal-title" id={`${brandName}${id}Label`}>{brandName}</h5>
+                  <h5 className="modal-title" id={`${brand}${id}Label`}>{brand}</h5>
                 </div>
                 <div className="modal-body">
                   <div className={ask}>

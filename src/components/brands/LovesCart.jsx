@@ -10,12 +10,11 @@ const LovesCart = ({ isOpen }) =>
 
   return (
     <Offcanvas show={isOpen} onHide={closeLoveCart} placement="start">
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title>سلة المشتريات</Offcanvas.Title>
+      <Offcanvas.Header closeButton style={{backgroundColor:"#19647c"}}>
+        <Offcanvas.Title>قائمة المفضلة</Offcanvas.Title>
       </Offcanvas.Header>
-      <hr className='mt-0'/>
-      <Offcanvas.Body>
-        <Stack gap={3}>
+      <Offcanvas.Body className="p-0">
+        <Stack>
           {loveItems.map(e => <LoveItem key={e.id} {...e} />)}
         </Stack>
       </Offcanvas.Body>

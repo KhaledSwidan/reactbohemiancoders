@@ -10,12 +10,11 @@ const ShoppingCart = ({ isOpen }) =>
   
   return (
     <Offcanvas show={isOpen} onHide={closeBrandCart} placement="start">
-      <Offcanvas.Header closeButton>
+      <Offcanvas.Header closeButton style={{backgroundColor:"#19647c"}}>
         <Offcanvas.Title>سلة المشتريات</Offcanvas.Title>
       </Offcanvas.Header>
-      <hr className='mt-0'/>
-      <Offcanvas.Body>
-        <Stack gap={3}>
+      <Offcanvas.Body className="p-0">
+        <Stack>
           {brandItems.map(e => <BrandItem key={e.id} {...e} />)}
           <div className="me-auto fw-bold fs-5">
             الاجمالى {" "}

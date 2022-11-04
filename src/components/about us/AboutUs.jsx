@@ -4,10 +4,14 @@ import FirstContent from './first content/FirstContent';
 import SecondContent from './second content/SecondContent';
 import ThirdContent from './third content/ThirdContent';
 import styles from "./aboutus.module.css";
+import ForthContent from './forth content/ForthContent';
+import FifthContent from './fifth content/FifthContent';
+import SixthContent from './sixth content/SixthContent';
+import SeventhContent from './seventh content/SeventhContent';
 
 const AboutUs = () =>
 {
-  const {aboutUs}=styles;
+  const { aboutUs } = styles;
   return (
     <>
       <section className={`${aboutUs} text-center py-5`}>
@@ -19,6 +23,10 @@ const AboutUs = () =>
             <FirstContent />
             <SecondContent />
             <ThirdContent />
+            <ForthContent />
+            <FifthContent />
+            <SixthContent />
+            <SeventhContent />
           </div>
         </div>
       </section>

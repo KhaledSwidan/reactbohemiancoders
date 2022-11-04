@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import sections from "../../data/sections.json";
+import sections from "../../data/sections.js";
 import StoreItem from "./StoreItem";
 import MainTitle from '../mainTitle/MainTitle';
 import styles from "./sections.module.css";

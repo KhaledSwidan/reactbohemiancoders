@@ -10,23 +10,14 @@ export const LovingCartProvider = ({ children }) =>
   const [loveItems, setLoveItems] = useState(initialLoveItems);
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isLove, setIsLove] = useState(false);
 
   const openLoveCart = () => setIsOpen(true);
   const closeLoveCart = () => setIsOpen(false);
 
   const getLoveQuantity = id => loveItems.find(e => e.id === id)?.quantity || 0;
-  const increaseLove = id => setLoveItems(
-    currItems =>
-    {
-      if (currItems.find(item => item.id === id) == null)
-        return [...currItems, { id, quantity: 1 }];
-      else return currItems.map(item =>
-      {
-        if (item.id === id) return { ...item, quantity: item.quantity + 1 };
-        else return item;
-      })
-    }
-  );
+
+  const handleLove = () => setIsLove(!isLove);
 
   const removeLove = id => setLoveItems(currItems => currItems.filter(item => item.id !== id));
 
@@ -42,8 +33,8 @@ export const LovingCartProvider = ({ children }) =>
         openLoveCart,
         loveCartQuantity,
         getLoveQuantity,
-        increaseLove,
-        removeLove}}>
+        removeLove,
+        handleLove}}>
       {children}
       <LovesCart isOpen={isOpen}/>
     </LovingCartContext.Provider>
@@ -51,3 +42,11 @@ export const LovingCartProvider = ({ children }) =>
 };
 
 export const UseLovingCart = () => useContext(LovingCartContext);
+
+const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
+  currency: "EGP",
+  style: "currency",
+});
+export const FormatCurrency = (number) => {
+  return CURRENCY_FORMATTER.format(number);
+};

@@ -2,32 +2,34 @@ import React from 'react';
 import { Button, Stack } from 'react-bootstrap';
 import brands from '../../data/brands';
 import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
+import styles from "./brands.module.css"
 
 const BrandItem = ({ id, quantity }) =>
 {
+  const { stackItem } = styles;
+
   const { removeBrandFromCart } = UseBrandingCart();
 
   const branditem = brands.find(i => i.id === id);
   if (branditem == null) return null;
 
-  console.log(branditem);
-
   return (
-    <Stack direction='horizontal' gap={2} className="d-flex align-items-center">
+    <Stack direction='horizontal' gap={2} className={`${stackItem} d-flex align-items-center justify-content-between`}>
       <img
         className="rounded"
         src={branditem.imgSrc}
         alt="cart-img"
         style={{ width: "125px", height: "75px", objectFit: "cover" }} />
       <div className='me-auto'>
-        <div>
-          {branditem.name} {" "}
+        <div className='text-end'>
+          {branditem.brandName} {" "}
+          <div className="text-muted" style={{ fontSize: ".75rem" }}>
           {quantity > 1 && (
             <span className="text-muted" style={{ fontSize: ".65rem" }}>
-              x{quantity}
+                عدد القطع
+                {quantity}
             </span>
-          )}
-          <div className="text-muted" style={{ fontSize: ".75rem" }}>
+          )} {" / "}
             {FormatCurrency(branditem.price)}
           </div>
         </div>
@@ -40,4 +42,4 @@ const BrandItem = ({ id, quantity }) =>
   );
 };
 
-export default BrandItem
+export default BrandItem;

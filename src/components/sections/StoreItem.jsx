@@ -9,20 +9,36 @@ const StoreItem = ({ id, price, title, imgSrc, content }) =>
   
   return (
     <Card className="h-100">
-      <Card.Img
-        src={imgSrc}
-        variant="top"
-        style={{ height: "200px", objectFit: "cover" }} />
-      <Card.Body>
-        <Card.Title className="d-flex justify-content-between align-items-baseline">
-          <span className='fs-2'>{title}</span>
-          <span className='text-muted me-2'>{FormatCurrency(price)}</span>
+      <Button type="button" variant="light" className={`btn w-100`} data-bs-toggle="modal"
+        data-bs-target={`#${id}`}>
+        <Card.Img
+          src={imgSrc}
+          variant="top"
+          style={{ height: "200px", objectFit: "contain" }} />
+        <div className="modal fade" id={`${id}`} tabIndex="-1" aria-labelledby={`${id}Label`} aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header justify-content-end">
+                <Card.Img
+                  src={imgSrc}
+                  variant="top"
+                  style={{ objectFit: "contain" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Button>
+      <Card.Body style={{ display: "flex", flexDirection: "column" }}>
+        <Card.Title className="d-flex flex-column align-items-end">
+          <span className='h3'>{title}</span>
+          <span className='text-muted'>{FormatCurrency(price)}</span>
         </Card.Title>
         <div className="mt-auto">
           {
             quantity === 0 ?
               (<Button onClick={() => increaseCartQuantity(id)} className="w-100">
                 اضافة الى السلة
+                <i className="fa-solid fa-cart-plus ms-2"></i>
               </Button>) :
               (<div className="d-flex align-items-center flex-column" style={{ gap: ".5rem" }}>
                 <div className='d-flex justify-content-center align-items-center' style={{ gap: ".5rem" }}>
@@ -38,6 +54,7 @@ const StoreItem = ({ id, price, title, imgSrc, content }) =>
           <Button type="button" className="btn btn-info mt-2 w-100" data-bs-toggle="modal"
             data-bs-target={`#${title}${id}`}>
             اسأل الصيدلي
+            <i className="fa-solid fa-circle-info ms-2"></i>
           </Button>
           <div className="modal fade" id={`${title}${id}`} tabIndex="-1" aria-labelledby={`${title}${id}Label`}
             aria-hidden="true">
