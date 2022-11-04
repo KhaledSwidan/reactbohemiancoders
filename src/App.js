@@ -38,12 +38,10 @@ import NoRosheta from './components/rosheta/rosheta not exist/NoRosheta';
 import { AuthProvider } from './context/AuthContext';
 import { RequireAuth } from './context/RequireAuth';
 import { BrandingCartProvider } from './context/BrandingCartContext';
-import { LovingCartProvider } from './context/LovingCartContext';
 
 const App = () =>
 {
   return (
-    <LovingCartProvider>
       <BrandingCartProvider>
         <ShoppingCartProvider>
           <NavBar />
@@ -93,7 +91,6 @@ const App = () =>
           <Footer />
         </ShoppingCartProvider>
       </BrandingCartProvider>
-    </LovingCartProvider>
   );
 };
 export default App;

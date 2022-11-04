@@ -11,10 +11,8 @@ const Brands = () =>
   const { brnds, brndNavInpt } = styles;
   const [branditm, setBranditm] = useState(brands);
   const [brandName, setBrandName] = useState([]);
-  console.log(brandName);
 
   const filterResult = slectedChar => setBranditm(brands.filter(e => e.char === slectedChar));
-
 
   return (
     <>

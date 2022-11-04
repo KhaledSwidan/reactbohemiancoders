@@ -2,20 +2,17 @@ import React from 'react'
 import { Button, Card } from 'react-bootstrap';
 import styles from "./brands.module.css"
 import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartContext';
-import { UseLovingCart } from '../../context/LovingCartContext';
 
 const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime, imgSrc }) =>
 {
-  const { ask, btnLove, btnImg } = styles;
+  const { ask, btnImg } = styles;
 
   const { getBrandItemsQuantity, increaseBrandCartQuantity, decreaseBrandCartQuantity, removeBrandFromCart } = UseBrandingCart();
   const quantity = getBrandItemsQuantity(id);
-
-  const { isLove, handleLove } = UseLovingCart();
   
   return (
     <Card className="h-100">
-      <Button type="button" variant="light" className={`${btnImg} btn w-100`} data-bs-toggle="modal"
+      <Button type="button" variant="light" className={`${btnImg} btn w-100 p-0`} data-bs-toggle="modal"
         data-bs-target={`#${id}`}>
         <Card.Img
           src={imgSrc}
@@ -24,7 +21,7 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
         <div className="modal fade" id={`${id}`} tabIndex="-1" aria-labelledby={`${id}Label`} aria-hidden="true">
           <div className="modal-dialog">
             <div className="modal-content">
-              <div className="modal-header justify-content-end">
+              <div className="modal-body p-0">
                 <Card.Img
                   src={imgSrc}
                   variant="top"
@@ -42,9 +39,6 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
             <span className='text-muted mb-2'>{FormatCurrency(price)}</span>
             <span dir='ltr'>Customer reviews: <i className="fa-solid fa-star" style={{ color: "orange" }} ></i></span>
           </div>
-          <Button onClick={handleLove} className={btnLove}>
-            {isLove ? (<i className="fa-solid fa-heart"></i>) : (<i className="fa-solid fa-heart-crack"></i>)}
-          </Button>
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ?
@@ -75,7 +69,7 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
                   <h5 className="modal-title" id={`${brand}${id}Label`}>{brand}</h5>
                 </div>
                 <div className="modal-body">
-                  <div className={ask}>
+                  <div className={ask} dir="ltr">
                     <div><h5>Brand: </h5><span>{brandDetails.brand}</span></div>
                     <div><h5>Item Form: </h5><span>{brandDetails.itemForm}</span></div>
                     <div><h5>Category Type: </h5><span>{brandDetails.categoryType}</span></div>
