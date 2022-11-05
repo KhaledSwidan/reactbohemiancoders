@@ -14,6 +14,7 @@ const Brands = () =>
 
   const filterResult = slectedChar => setBranditm(brands.filter(e => e.char === slectedChar));
 
+
   return (
     <>
       <section className={`${brnds} px-3 py-4 text-center`}>

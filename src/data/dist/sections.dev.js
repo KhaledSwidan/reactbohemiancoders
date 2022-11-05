@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var sections = [{
+  "char": "a",
   "id": "sec1",
   "imgSrc": require("../components/imgs/asprinprotect100.jpg"),
   "title": "ASPIRIN PROTECT 100mg",
@@ -28,13 +29,31 @@ var sections = [{
   "price": 50,
   "category": "one"
 }, {
+  "char": "b",
   "id": "sec2",
-  "imgSrc": "https://picsum.photos/id/2/720/480",
-  "title": "منتج2",
-  "content": "شرح تفصيلي للمنتج",
+  "imgSrc": require("../components/imgs/brufen400tab.jpg"),
+  "title": "BRUFEN 400 MG TAB",
+  "payAttention": "المعلومات الواردة عن الدواء مبنية على النشرات الطبية للدواء، مع هذا فإنها لا تشكل بديلا عن استشارة الطبيب.",
+  "content": {
+    name: "بروفين 400 أقراص",
+    formation: "أيبوبروفين",
+    aboutItem: "\u0623\u064A\u0628\u0648\u0628\u0631\u0648\u0641\u064A\u0646 (Ibuprofen) \u0647\u0648 \u062F\u0648\u0627\u0621 \u0645\u0636\u0627\u062F \u0644\u0644\u0627\u0644\u062A\u0647\u0627\u0628 \u063A\u064A\u0631 \u0627\u0644\u0627\u0633\u062A\u0631\u0648\u064A\u062F\u064A (Nonsteroidal anti-inflammatory drug).\n      \u064A\u064F\u0633\u062A\u062E\u062F\u0645 \u0627\u0644\u0623\u064A\u0628\u0648\u0628\u0631\u0648\u0641\u064A\u0646 \u0641\u064A \u0627\u0644\u0622\u062A\u064A:\n\u062A\u0633\u0643\u064A\u0646 \u0627\u0644\u0623\u0648\u062C\u0627\u0639 \u0648\u0627\u0644\u062A\u062E\u0641\u064A\u0641 \u0645\u0646 \u0627\u0644\u0623\u0644\u0645 \u0648\u0627\u0644\u062A\u0635\u0644\u0628 \u0639\u0646\u062F \u0627\u0644\u0625\u0635\u0627\u0628\u0629 \u0628\u0627\u0644\u062A\u0647\u0627\u0628 \u0627\u0644\u0645\u0641\u0627\u0635\u0644.\n\u0639\u0644\u0627\u062C \u0623\u0639\u0631\u0627\u0636 \u0627\u0644\u062A\u0647\u0627\u0628 \u0627\u0644\u0645\u0641\u0627\u0635\u0644 \u0627\u0644\u0631\u0648\u0645\u0627\u062A\u0648\u064A\u062F\u064A (Rheumatoid arthritis) \u0648\u0627\u0644\u0641\u064F\u0635\u0627\u0644 \u0627\u0644\u0639\u0638\u0645\u064A (Osteoarthritis).\n\u062A\u062E\u0641\u064A\u0641 \u0623\u0639\u0631\u0627\u0636 \u0645\u0631\u0636 \u0627\u0644\u0646\u0642\u0631\u0633 (Gout).\n\u062A\u0633\u0643\u064A\u0646 \u0648\u062C\u0639 \u0627\u0644\u0631\u0623\u0633 \u0627\u0644\u062E\u0641\u064A\u0641 \u0625\u0644\u0649 \u0627\u0644\u0645\u062A\u0648\u0633\u0637.\n\u062A\u0633\u0643\u064A\u0646 \u0627\u0644\u0622\u0644\u0627\u0645 \u0648\u0627\u0644\u0627\u0646\u0642\u0628\u0627\u0636\u0627\u062A \u0627\u0644\u0645\u0631\u0627\u0641\u0642\u0629 \u0644\u0644\u062F\u0648\u0631\u0629 \u0627\u0644\u0634\u0647\u0631\u064A\u0629.\n\u062A\u062E\u0641\u064A\u0641 \u0622\u0644\u0627\u0645 \u0627\u0644\u0623\u0633\u0646\u0627\u0646.\n\u062E\u0641\u0636 \u0627\u0644\u062D\u0631\u0627\u0631\u0629.\n",
+    pharmacistForm: "أقراص - كبسولات - جل أو كريم - شراب - لبوس - حقن",
+    doses: "تختلف الجرعة باختلاف دواعي الاستخدام، ولكن بشكل عام تكون الجرعة للبالغين بين 200 - 400 ملليغرام.",
+    storage_preservation: "يجب حفظ الدواء في علبة مغلقة على درجة حرارة الغرفة، وبعيدًا عن متناول أيدي الأطفال.",
+    forgettingAdose: "بشكل عام يُعطى الأيبوبروفين عند الحاجة، ولكن في حال طلب الطبيب تناوله بشكل متتابع يجب أخذ الجرعة عند تذكرها، وتجنب مضاعفة الجرعة.",
+    overdose: "يجب الاتصال على الطوارئ فورًا عند تناول جرعة زائدة منه"
+  },
+  "warnings": {
+    pregnancy: "يُمكن استخدام دواء الأيبوبروفين بين الأسبوع 10 - 20 من الحمل في حال كانت فائدته تفوق مخاطره، ولكن يُمنع استخدامه في الثلث الأخير من الحمل؛ لأنه يُسبب الإغلاق المبكر لقناة الجنين.  تصنيف الدواء للحامل: فئة (C).",
+    breastfeeding: "ينتقل هذا الدواء إلى حليب الأم، لكن عند تناوله بالجرعات العادية فمن غير المحتمل أن يكون له أي تأثير أو مضاعفات سلبية على الرضيع.",
+    babies: "يجب عدم إعطاؤه تحت سن 6 أشهر.",
+    eldery: "هنالك حاجة لتقليل الجرعة الدوائية اعتمادًا على وظائف الكلى."
+  },
   "price": 50,
   "category": "one"
 }, {
+  "char": "c",
   "id": "sec3",
   "imgSrc": "https://picsum.photos/id/3/720/480",
   "title": "منتج3",
@@ -42,6 +61,7 @@ var sections = [{
   "price": 50,
   "category": "one"
 }, {
+  "char": "d",
   "id": "sec4",
   "imgSrc": "https://picsum.photos/id/4/720/480",
   "title": "منتج4",
@@ -49,6 +69,7 @@ var sections = [{
   "price": 50,
   "category": "two"
 }, {
+  "char": "e",
   "id": "sec5",
   "imgSrc": "https://picsum.photos/id/5/720/480",
   "title": "منتج5",
@@ -56,6 +77,7 @@ var sections = [{
   "price": 50,
   "category": "two"
 }, {
+  "char": "f",
   "id": "sec6",
   "imgSrc": "https://picsum.photos/id/6/720/480",
   "title": "منتج6",
@@ -63,6 +85,7 @@ var sections = [{
   "price": 50,
   "category": "three"
 }, {
+  "char": "g",
   "id": "sec7",
   "imgSrc": "https://picsum.photos/id/7/720/480",
   "title": "منتج7",
@@ -70,6 +93,7 @@ var sections = [{
   "price": 50,
   "category": "four"
 }, {
+  "char": "h",
   "id": "sec8",
   "imgSrc": "https://picsum.photos/id/8/720/480",
   "title": "منتج8",
@@ -77,6 +101,7 @@ var sections = [{
   "price": 50,
   "category": "four"
 }, {
+  "char": "i",
   "id": "sec9",
   "imgSrc": "https://picsum.photos/id/9/720/480",
   "title": "منتج9",
@@ -84,6 +109,7 @@ var sections = [{
   "price": 50,
   "category": "four"
 }, {
+  "char": "j",
   "id": "sec10",
   "imgSrc": "https://picsum.photos/id/10/720/480",
   "title": "منتج10",
@@ -91,6 +117,7 @@ var sections = [{
   "price": 50,
   "category": "five"
 }, {
+  "char": "k",
   "id": "sec11",
   "imgSrc": "https://picsum.photos/id/11/720/480",
   "title": "منتج11",
@@ -98,6 +125,7 @@ var sections = [{
   "price": 50,
   "category": "six"
 }, {
+  "char": "l",
   "id": "sec12",
   "imgSrc": "https://picsum.photos/id/12/720/480",
   "title": "منتج12",
@@ -105,6 +133,7 @@ var sections = [{
   "price": 50,
   "category": "six"
 }, {
+  "char": "m",
   "id": "sec13",
   "imgSrc": "https://picsum.photos/id/13/720/480",
   "title": "منتج13",
@@ -112,6 +141,7 @@ var sections = [{
   "price": 50,
   "category": "seven"
 }, {
+  "char": "n",
   "id": "sec14",
   "imgSrc": "https://picsum.photos/id/14/720/480",
   "title": "منتج14",
@@ -119,6 +149,7 @@ var sections = [{
   "price": 50,
   "category": "eight"
 }, {
+  "char": "o",
   "id": "sec15",
   "imgSrc": "https://picsum.photos/id/15/720/480",
   "title": "منتج15",
@@ -126,6 +157,7 @@ var sections = [{
   "price": 50,
   "category": "eight"
 }, {
+  "char": "p",
   "id": "sec16",
   "imgSrc": "https://picsum.photos/id/16/720/480",
   "title": "منتج16",
@@ -133,6 +165,7 @@ var sections = [{
   "price": 50,
   "category": "eight"
 }, {
+  "char": "q",
   "id": "sec17",
   "imgSrc": "https://picsum.photos/id/17/720/480",
   "title": "منتج17",
@@ -140,7 +173,72 @@ var sections = [{
   "price": 50,
   "category": "eight"
 }, {
+  "char": "r",
   "id": "sec18",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "s",
+  "id": "sec19",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "t",
+  "id": "sec20",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "u",
+  "id": "sec21",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "v",
+  "id": "sec22",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "w",
+  "id": "sec23",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "x",
+  "id": "sec24",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "y",
+  "id": "sec25",
+  "imgSrc": "https://picsum.photos/id/18/720/480",
+  "title": "منتج18",
+  "content": "شرح تفصيلي للمنتج",
+  "price": 50,
+  "category": "eight"
+}, {
+  "char": "z",
+  "id": "sec26",
   "imgSrc": "https://picsum.photos/id/18/720/480",
   "title": "منتج18",
   "content": "شرح تفصيلي للمنتج",

@@ -1,5 +1,6 @@
 const sections = [
   {
+    "char": "a",
     "id": "sec1",
     "imgSrc": require("../components/imgs/asprinprotect100.jpg"),
     "title": "ASPIRIN PROTECT 100mg",
@@ -30,14 +31,41 @@ const sections = [
     "category": "one"
   },
   {
+    "char": "b",
     "id": "sec2",
-    "imgSrc": "https://picsum.photos/id/2/720/480",
-    "title": "منتج2",
-    "content": "شرح تفصيلي للمنتج",
+    "imgSrc": require("../components/imgs/brufen400tab.jpg"),
+    "title": "BRUFEN 400 MG TAB",
+    "payAttention": "المعلومات الواردة عن الدواء مبنية على النشرات الطبية للدواء، مع هذا فإنها لا تشكل بديلا عن استشارة الطبيب.",
+    "content": {
+      name: "بروفين 400 أقراص",
+      formation: "أيبوبروفين",
+      aboutItem: `أيبوبروفين (Ibuprofen) هو دواء مضاد للالتهاب غير الاسترويدي (Nonsteroidal anti-inflammatory drug).
+      يُستخدم الأيبوبروفين في الآتي:
+تسكين الأوجاع والتخفيف من الألم والتصلب عند الإصابة بالتهاب المفاصل.
+علاج أعراض التهاب المفاصل الروماتويدي (Rheumatoid arthritis) والفُصال العظمي (Osteoarthritis).
+تخفيف أعراض مرض النقرس (Gout).
+تسكين وجع الرأس الخفيف إلى المتوسط.
+تسكين الآلام والانقباضات المرافقة للدورة الشهرية.
+تخفيف آلام الأسنان.
+خفض الحرارة.
+`,
+      pharmacistForm: "أقراص - كبسولات - جل أو كريم - شراب - لبوس - حقن",
+      doses: "تختلف الجرعة باختلاف دواعي الاستخدام، ولكن بشكل عام تكون الجرعة للبالغين بين 200 - 400 ملليغرام.",
+      storage_preservation: "يجب حفظ الدواء في علبة مغلقة على درجة حرارة الغرفة، وبعيدًا عن متناول أيدي الأطفال.",
+      forgettingAdose: "بشكل عام يُعطى الأيبوبروفين عند الحاجة، ولكن في حال طلب الطبيب تناوله بشكل متتابع يجب أخذ الجرعة عند تذكرها، وتجنب مضاعفة الجرعة.",
+      overdose: "يجب الاتصال على الطوارئ فورًا عند تناول جرعة زائدة منه"
+    },
+    "warnings": {
+      pregnancy: "يُمكن استخدام دواء الأيبوبروفين بين الأسبوع 10 - 20 من الحمل في حال كانت فائدته تفوق مخاطره، ولكن يُمنع استخدامه في الثلث الأخير من الحمل؛ لأنه يُسبب الإغلاق المبكر لقناة الجنين.  تصنيف الدواء للحامل: فئة (C).",
+      breastfeeding: "ينتقل هذا الدواء إلى حليب الأم، لكن عند تناوله بالجرعات العادية فمن غير المحتمل أن يكون له أي تأثير أو مضاعفات سلبية على الرضيع.",
+      babies: "يجب عدم إعطاؤه تحت سن 6 أشهر.",
+      eldery: "هنالك حاجة لتقليل الجرعة الدوائية اعتمادًا على وظائف الكلى."
+    },
     "price": 50,
     "category": "one"
   },
   {
+    "char": "c",
     "id": "sec3",
     "imgSrc": "https://picsum.photos/id/3/720/480",
     "title": "منتج3",
@@ -46,6 +74,7 @@ const sections = [
     "category": "one"
   },
   {
+    "char": "d",
     "id": "sec4",
     "imgSrc": "https://picsum.photos/id/4/720/480",
     "title": "منتج4",
@@ -54,6 +83,7 @@ const sections = [
     "category": "two"
   },
   {
+    "char": "e",
     "id": "sec5",
     "imgSrc": "https://picsum.photos/id/5/720/480",
     "title": "منتج5",
@@ -62,6 +92,7 @@ const sections = [
     "category": "two"
   },
   {
+    "char": "f",
     "id": "sec6",
     "imgSrc": "https://picsum.photos/id/6/720/480",
     "title": "منتج6",
@@ -70,6 +101,7 @@ const sections = [
     "category": "three"
   },
   {
+    "char": "g",
     "id": "sec7",
     "imgSrc": "https://picsum.photos/id/7/720/480",
     "title": "منتج7",
@@ -78,6 +110,7 @@ const sections = [
     "category": "four"
   },
   {
+    "char": "h",
     "id": "sec8",
     "imgSrc": "https://picsum.photos/id/8/720/480",
     "title": "منتج8",
@@ -86,6 +119,7 @@ const sections = [
     "category": "four"
   },
   {
+    "char": "i",
     "id": "sec9",
     "imgSrc": "https://picsum.photos/id/9/720/480",
     "title": "منتج9",
@@ -94,6 +128,7 @@ const sections = [
     "category": "four"
   },
   {
+    "char": "j",
     "id": "sec10",
     "imgSrc": "https://picsum.photos/id/10/720/480",
     "title": "منتج10",
@@ -102,6 +137,7 @@ const sections = [
     "category": "five"
   },
   {
+    "char": "k",
     "id": "sec11",
     "imgSrc": "https://picsum.photos/id/11/720/480",
     "title": "منتج11",
@@ -110,6 +146,7 @@ const sections = [
     "category": "six"
   },
   {
+    "char": "l",
     "id": "sec12",
     "imgSrc": "https://picsum.photos/id/12/720/480",
     "title": "منتج12",
@@ -118,6 +155,7 @@ const sections = [
     "category": "six"
   },
   {
+    "char": "m",
     "id": "sec13",
     "imgSrc": "https://picsum.photos/id/13/720/480",
     "title": "منتج13",
@@ -126,6 +164,7 @@ const sections = [
     "category": "seven"
   },
   {
+    "char": "n",
     "id": "sec14",
     "imgSrc": "https://picsum.photos/id/14/720/480",
     "title": "منتج14",
@@ -134,6 +173,7 @@ const sections = [
     "category": "eight"
   },
   {
+    "char": "o",
     "id": "sec15",
     "imgSrc": "https://picsum.photos/id/15/720/480",
     "title": "منتج15",
@@ -142,6 +182,7 @@ const sections = [
     "category": "eight"
   },
   {
+    "char": "p",
     "id": "sec16",
     "imgSrc": "https://picsum.photos/id/16/720/480",
     "title": "منتج16",
@@ -150,6 +191,7 @@ const sections = [
     "category": "eight"
   },
   {
+    "char": "q",
     "id": "sec17",
     "imgSrc": "https://picsum.photos/id/17/720/480",
     "title": "منتج17",
@@ -158,7 +200,80 @@ const sections = [
     "category": "eight"
   },
   {
+    "char": "r",
     "id": "sec18",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "s",
+    "id": "sec19",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "t",
+    "id": "sec20",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "u",
+    "id": "sec21",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "v",
+    "id": "sec22",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "w",
+    "id": "sec23",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "x",
+    "id": "sec24",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "y",
+    "id": "sec25",
+    "imgSrc": "https://picsum.photos/id/18/720/480",
+    "title": "منتج18",
+    "content": "شرح تفصيلي للمنتج",
+    "price": 50,
+    "category": "eight"
+  },
+  {
+    "char": "z",
+    "id": "sec26",
     "imgSrc": "https://picsum.photos/id/18/720/480",
     "title": "منتج18",
     "content": "شرح تفصيلي للمنتج",
