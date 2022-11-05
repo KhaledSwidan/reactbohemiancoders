@@ -10,7 +10,7 @@ const FirstContent = () =>
         <div className={`${feat} border-start border-end border-primary px-2`}>
           <div className={`${iconHolder} position-relative d-flex justify-content-center`}>
             <i className={`fa-solid fa-1 position-absolute bottom-0 ${number}`}></i>
-            <i className={`fa-solid fa-prescription position-absolute bottom-0 fa-4x ${icon} text-white`}></i>
+            <i className={`fa-solid fa-prescription position-absolute bottom-0 fa-4x ${icon}`}></i>
           </div>
           <h4 className="my-3 text-uppercase fw-bold">الروشتة</h4>
           <p className="lh-lg">

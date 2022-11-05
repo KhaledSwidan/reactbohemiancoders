@@ -8,13 +8,20 @@
   font-size: 12rem;
   color: #19647c;
 }
-.icon{color: #fff;}
+.icon{
+  color: rgb(87 142 161) !important;
+  transition: all .6s ease-in-out;
+}
 .feat{transition: all .6s ease-in-out;}
 .feat:hover{
   border: 1px solid #19647c !important;
   border-radius: 0.375rem;
   box-shadow: 0px 0px 1px 0px #000;
   background-color: rgb(87 142 161 / 60%);
+  transition: all .6s ease-in-out;
+}
+.feat:hover .icon{
+  color: #fff !important;
   transition: all .6s ease-in-out;
 }
 .feat h4{color: #000;}

@@ -55,12 +55,21 @@
   align-items: baseline;
   justify-content: flex-start;
 }
-.ask div{
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
 .ask div span{margin-left: 10px;}
+.askCont{
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: baseline;
+  padding: .2rem .5rem;
+  border-radius: .375rem;
+  transition: all .6s ease-in-out;
+  width: 100%;
+}
+.askCont:hover{
+  background-color: rgba(1, 132, 176, 0.7);
+  transition: all .6s ease-in-out;
+}
+.askCont h5{width: min-content;}
 .btnLove{
   padding: 0 !important;
 }
