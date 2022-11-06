@@ -5,7 +5,7 @@ import { UseBrandingCart, FormatCurrency } from '../../context/BrandingCartConte
 
 const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime, imgSrc }) =>
 {
-  const { ask, btnImg } = styles;
+  const { ask, btnImg, askCont } = styles;
 
   const { getBrandItemsQuantity, increaseBrandCartQuantity, decreaseBrandCartQuantity, removeBrandFromCart } = UseBrandingCart();
   const quantity = getBrandItemsQuantity(id);
@@ -65,27 +65,27 @@ const StoreItem = ({ id, char, price, brand, brandName, brandDetails, updateTime
             aria-hidden="true">
             <div className="modal-dialog">
               <div className="modal-content">
-                <div className="modal-header justify-content-end">
+                <div className="modal-header" style={{backgroundColor:"rgb(25 100 124)"}} dir="ltr">
                   <h5 className="modal-title" id={`${brand}${id}Label`}>{brand}</h5>
                 </div>
-                <div className="modal-body">
+                <div className="modal-body" style={{backgroundColor:"rgb(25 100 124 / 50%)"}}>
                   <div className={ask} dir="ltr">
-                    <div><h5>Brand: </h5><span>{brandDetails.brand}</span></div>
-                    <div><h5>Item Form: </h5><span>{brandDetails.itemForm}</span></div>
-                    <div><h5>Category Type: </h5><span>{brandDetails.categoryType}</span></div>
-                    <div><h5>Recommended Use: </h5><span>{brandDetails.recommendedUse}</span></div>
-                    <div><h5>Number of Items: </h5><span>{brandDetails.numberOfItems}</span></div>
-                    <div><h5>Suitable Skin Type: </h5><span>{brandDetails.skinType}</span></div>
-                    <div><h5>Item Volume: </h5><span>{brandDetails.itemVolume}</span></div>
-                    <div><h5>Item Weight: </h5><span>{brandDetails.itemWeight}</span></div>
-                    <div><h5>Item Dimensions LxWxH: </h5><span>{brandDetails.itemDimensions}</span></div>
+                    <div className={`${askCont}`}><h5>Brand: </h5><span>{brandDetails.brand}</span></div>
+                    <div className={`${askCont}`}><h5>Item Form: </h5><span>{brandDetails.itemForm}</span></div>
+                    <div className={`${askCont}`}><h5>Category Type: </h5><span>{brandDetails.categoryType}</span></div>
+                    <div className={`${askCont}`}><h5>Recommended Use: </h5><span>{brandDetails.recommendedUse}</span></div>
+                    <div className={`${askCont}`}><h5>Number of Items: </h5><span>{brandDetails.numberOfItems}</span></div>
+                    <div className={`${askCont}`}><h5>Suitable Skin Type: </h5><span>{brandDetails.skinType}</span></div>
+                    <div className={`${askCont}`}><h5>Item Volume: </h5><span>{brandDetails.itemVolume}</span></div>
+                    <div className={`${askCont}`}><h5>Item Weight: </h5><span>{brandDetails.itemWeight}</span></div>
+                    <div className={`${askCont}`}><h5>Item Dimensions LxWxH: </h5><span>{brandDetails.itemDimensions}</span></div>
                   </div>
                   <hr />
                   <h5>About this item</h5>
                   <p className="text-end">{brandDetails.aboutItem}</p>
                 </div>
-                <div className="modal-footer flex-row-reverse justify-content-between">
-                  <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
+                <div className="modal-footer flex-row-reverse justify-content-between" style={{backgroundColor:"rgb(25 100 124)"}}>
+                  <button type="button" className="btn btn-danger" data-bs-dismiss="modal">اغلاق</button>
                   <button type="button" className="btn btn-primary">تحدث لصيدلي</button>
                 </div>
               </div>

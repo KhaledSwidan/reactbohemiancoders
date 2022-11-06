@@ -34,7 +34,7 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) =>
       </Button>
       <Card.Body style={{ display: "flex", flexDirection: "column" }}>
         <Card.Title className="d-flex flex-column align-items-end">
-          <span className='h3'>{title}</span>
+          <span className='h3 text-end'>{title}</span>
           <span className='text-muted'>{FormatCurrency(price)}</span>
         </Card.Title>
         <div className="mt-auto">
@@ -64,26 +64,26 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) =>
             aria-hidden="true">
             <div className="modal-dialog">
               <div className="modal-content">
-                <div className="modal-header" dir="ltr">
+                <div className="modal-header" style={{backgroundColor:"rgb(25 100 124)"}} dir="ltr">
                   <h5 className="modal-title" id={`${id}Label`}>{title}</h5>
                 </div>
-                <div className="modal-body">
+                <div className="modal-body" style={{backgroundColor:"rgb(25 100 124 / 50%)"}}>
                   <Alert variant="danger">{payAttention}</Alert>
                   <div className={ask}>
-                    <div className={`${askCont} mb-2`}><h5>اسم الدواء: </h5><span className="ms-2">{content.name}</span></div>
-                    <div className={`${askCont} mb-2`}><h5>المادة الفعالة:</h5><span className="ms-2">{content.formation}</span></div>
-                    <div className={`${askCont} mb-2`}><h5> الشكل الصيدلي: </h5><span className="ms-2">{content.pharmacistForm}</span></div>
-                    <div className={`${askCont} mb-2`}><h5> الجرعة:</h5><span className="ms-2">{content.doses}</span></div>
-                    <div className={`${askCont} mb-2`}><h5>الحفظ والتخزين:</h5><span className="ms-2">{content.storage_preservation}</span></div>
-                    <div className={`${askCont} mb-2`}><h5>نسيان الجرعة: </h5><span className="ms-2">{content.forgettingAdose}</span></div>
-                    <div className={`${askCont} mb-2`}><h5> الجرعة الزائدة: </h5><span className="ms-2">{content.overdose}</span></div>
+                    <div className={`${askCont}`}><h5>اسم الدواء: </h5><span className="ms-2">{content.name}</span></div>
+                    <div className={`${askCont}`}><h5>المادة الفعالة:</h5><span className="ms-2">{content.formation}</span></div>
+                    <div className={`${askCont}`}><h5> الشكل الصيدلي: </h5><span className="ms-2">{content.pharmacistForm}</span></div>
+                    <div className={`${askCont}`}><h5> الجرعة:</h5><span className="ms-2">{content.doses}</span></div>
+                    <div className={`${askCont}`}><h5>الحفظ والتخزين:</h5><span className="ms-2">{content.storage_preservation}</span></div>
+                    <div className={`${askCont}`}><h5>نسيان الجرعة: </h5><span className="ms-2">{content.forgettingAdose}</span></div>
+                    <div className={`${askCont}`}><h5> الجرعة الزائدة: </h5><span className="ms-2">{content.overdose}</span></div>
                   </div>
                   <hr />
                   <h5>معلومات عن الدواء:</h5>
                   <p className="">{content.aboutItem}</p>
                 </div>
-                <div className="modal-footer flex-row-reverse justify-content-between">
-                  <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
+                <div className="modal-footer flex-row-reverse justify-content-between" style={{backgroundColor:"rgb(25 100 124)"}}>
+                  <button type="button" className="btn btn-danger" data-bs-dismiss="modal">اغلاق</button>
                   <button type="button" className="btn btn-primary">تحدث لصيدلي</button>
                 </div>
               </div>
