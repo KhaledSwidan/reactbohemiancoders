@@ -9,7 +9,7 @@ const MainHome = () =>
   const {headCar} = styles;
   return (
     <>
-      <header className={`${headCar} position-relative d-flex flex-column justify-content-between`}>
+      <header className={`${headCar} position-relative d-flex flex-column`}>
         <CarouselHome />
         <div className="container">
           <AdHome />
