@@ -47,26 +47,14 @@
 }
 .effect1{
   position: absolute;
-  bottom: 10%;
-  right: 8%;
+  bottom: -40px;
+  right: 0;
   width: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   animation: topDown 3s ease-in-out infinite;
 }
-@media (max-width: 1200px) {
-  .effect1 {right: 0px; bottom:-40px}
-}
-/* @media (max-width: 991px) {
-  .effect1 {right: 50%;}
-}
-@media (max-width: 767px) {
-  .effect1 {right: 15px;}
-}
-@media (max-width: 575px) {
-  .effect1 {bottom: 45%;}
-} */
 .effect1 div {
   background-color: #19647c;
   width: 3.2px;
