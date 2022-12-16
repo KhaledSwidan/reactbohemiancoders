@@ -1,7 +1,7 @@
-import MainTitle from "../mainTitle/MainTitle";
-import styles from "./blog.module.css";
-import NavBlog from "./blog nav/NavBlog";
 import { Outlet } from "react-router-dom";
+import MainTitle from "../mainTitle/MainTitle";
+import NavBlog from "./blog nav/NavBlog";
+import styles from "./blog.module.css";
 
 const FinalBlog = () =>
 {

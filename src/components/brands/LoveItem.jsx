@@ -1,36 +1,40 @@
-import React from 'react';
-import { Button, Stack } from 'react-bootstrap';
-import brands from '../../data/brands';
-import { UseLovingCart, FormatCurrency } from '../../context/LovingCartContext';
-import styles from "./brands.module.css"
+import React from "react";
+import { Button, Stack } from "react-bootstrap";
+import brands from "../../data/brands";
+import { UseLovingCart, FormatCurrency } from "../../context/LovingCartContext";
+import styles from "./brands.module.css";
 
-const LoveItem = ({ id }) =>
-{
+const LoveItem = ({ id }) => {
   const { stackItem } = styles;
 
   const { removeLove } = UseLovingCart();
 
-  const branditem = brands.find(i => i.id === id);
-  if (branditem == null) return null;
+  const brandItem = brands.find((i) => i.id === id);
+  if (brandItem == null) return null;
 
   return (
-    <Stack direction='horizontal' gap={2} className={`${stackItem} d-flex align-items-center justify-content-between`}>
+    <Stack
+      direction="horizontal"
+      gap={2}
+      className={`${stackItem} d-flex align-items-center justify-content-between`}
+    >
       <img
         className="rounded"
-        src={branditem.imgSrc}
+        src={brandItem.imgSrc}
         alt="cart-img"
-        style={{ width: "125px", height: "75px", objectFit: "cover" }} />
-      <div className='me-auto text-end'>
-        {branditem.brandName} {" "}
+        style={{ width: "125px", height: "75px", objectFit: "cover" }}
+      />
+      <div className="me-auto text-end">
+        {brandItem.brandName}{" "}
         <div className="text-muted" style={{ fontSize: ".75rem" }}>
-          {FormatCurrency(branditem.price)}
+          {FormatCurrency(brandItem.price)}
         </div>
       </div>
-      <Button variant='outline-danger' size="sm" onClick={() => removeLove(id)}>
+      <Button variant="outline-danger" size="sm" onClick={() => removeLove(id)}>
         &times;
       </Button>
     </Stack>
   );
 };
 
-export default LoveItem
+export default LoveItem;

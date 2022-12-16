@@ -1,9 +1,8 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./fullnavbar.module.css";
 
-const SideNavBar = () =>
-{
+const SideNavBar = () => {
   const { mainSections } = styles;
   return (
     <>
@@ -33,14 +32,35 @@ const SideNavBar = () =>
           </NavLink>
         </li>
         <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" id="roshetaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link
+            className="nav-link dropdown-toggle"
+            id="roshetaDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <i className="fa-solid fa-pills me-3"></i>
             الروشتة
           </Link>
           <ul className="dropdown-menu" aria-labelledby="roshetaDropdown">
-            <li><NavLink className="dropdown-item text-start" to="/normalrosheta">روشتة عادية</NavLink></li>
-            <li><NavLink className="dropdown-item text-start" to="/contractrosheta">روشتة تعاقد</NavLink></li>
-            <li><NavLink className="dropdown-item text-start" to="/norosheta">ليس لدي روشتة</NavLink></li>
+            <li>
+              <NavLink className="dropdown-item text-start" to="/normalrosheta">
+                روشتة عادية
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="dropdown-item text-start"
+                to="/contractrosheta"
+              >
+                روشتة تعاقد
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item text-start" to="/norosheta">
+                ليس لدي روشتة
+              </NavLink>
+            </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
@@ -48,13 +68,27 @@ const SideNavBar = () =>
           </ul>
         </li>
         <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link
+            className="nav-link dropdown-toggle"
+            id="servicesDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <i className="fa-solid fa-hand-holding-medical me-3"></i>
             الخدمات
           </Link>
           <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><NavLink className="dropdown-item" to="/services">اسأل صيدلي</NavLink></li>
-            <li><NavLink className="dropdown-item" to="/services">الطلبات الخاصة</NavLink></li>
+            <li>
+              <NavLink className="dropdown-item" to="/services">
+                اسأل صيدلي
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item" to="/services">
+                الطلبات الخاصة
+              </NavLink>
+            </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
@@ -78,4 +112,4 @@ const SideNavBar = () =>
   );
 };
 
-export default SideNavBar
+export default SideNavBar;
