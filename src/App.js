@@ -35,9 +35,9 @@ import ContractRosheta from "./components/rosheta/rosheta contract/ContractRoshe
 import NormalRosheta from "./components/rosheta/rosheta normal/NormalRosheta";
 import NoRosheta from "./components/rosheta/rosheta not exist/NoRosheta";
 
-import { AuthProvider } from "./context/AuthContext";
+import AuthProvider from "./context/AuthContext";
 import { BrandingCartProvider } from "./context/BrandingCartContext";
-import { RequireAuth } from "./context/RequireAuth";
+import RequireAuth from "./context/RequireAuth";
 
 const App = () => {
   return (
@@ -82,8 +82,8 @@ const App = () => {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<LogIn />} />
             <Route path="/wishlist" element={<WishList />} />
-            <Route path="/update-profile" element={<UpdateProfile />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/updateprofile" element={<UpdateProfile />} />
+            <Route path="/forgotpassword" element={<ForgotPassword />} />
 
             <Route path="*" element={<ErrorPage />} />
           </Routes>

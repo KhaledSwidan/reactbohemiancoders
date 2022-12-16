@@ -1,34 +1,35 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import
-  {
-    createUserWithEmailAndPassword,
-    onAuthStateChanged,
-    signOut,
-    signInWithEmailAndPassword,
-    sendPasswordResetEmail,
-    updateEmail,
-    updatePassword
-  } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signOut,
+  updateEmail,
+  updatePassword,
+} from "firebase/auth";
+import { React, useContext, useState, useEffect, createContext } from "react";
 import auth from "../firebase";
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) =>
-{
+const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState();
   const [loading, setLoading] = useState(true);
 
-  const signup = (email, password) => { return createUserWithEmailAndPassword(auth, email, password) };
-  const logout = () => { return signOut(auth) };
-  const login = (email, password) => { return signInWithEmailAndPassword(auth, email, password) };
-  const resetPassword = (email) => { return sendPasswordResetEmail(auth, email) };
-  const updateUserEmail = (email) => { return updateEmail(auth.currentUser, email) };
-  const updateUserPassword = (password) => { return updatePassword(auth.currentUser, password) };
+  const signup = (email, password) =>
+    createUserWithEmailAndPassword(auth, email, password);
+  const login = (email, password) =>
+    signInWithEmailAndPassword(auth, email, password);
 
-  useEffect(() =>
-  {
-    const unsubscribe = onAuthStateChanged(auth, user =>
-    {
+  const logout = () => signOut(auth);
+
+  const resetPassword = (email) => sendPasswordResetEmail(auth, email);
+  const updateUserEmail = (email) => updateEmail(auth.currentUser, email);
+  const updateUserPassword = (password) =>
+    updatePassword(auth.currentUser, password);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
       setLoading(false);
     });
@@ -39,16 +40,18 @@ export const AuthProvider = ({ children }) =>
     <AuthContext.Provider
       value={{
         currentUser,
+        login,
         signup,
         logout,
-        login,
         resetPassword,
         updateUserEmail,
-        updateUserPassword
-      }}>
-      {!loading && children} {/* loadding must be false to show children */}
+        updateUserPassword,
+      }}
+    >
+      {!loading && children}
     </AuthContext.Provider>
   );
 };
 
 export const useAuth = () => useContext(AuthContext);
+export default AuthProvider;

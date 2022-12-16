@@ -1,54 +1,80 @@
-import React, { useRef, useState } from 'react'
-import { Alert, Button, Card, Container, Form } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { React, useRef, useState } from "react";
+import { Form, Button, Card, Alert, Container } from "react-bootstrap";
 
-const ForgotPassword = () =>
-{
+import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import styles from "./profile.module.css";
+
+const ForgotPassword = () => {
+  const { cardheader } = styles;
+  const emailRef = useRef();
   const { resetPassword } = useAuth();
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const emailRef = useRef();
-
-  const handleSubmit = async e =>
-  {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
+      setMessage("");
       setError("");
       setLoading(true);
       await resetPassword(emailRef.current.value);
-      setMessage("تفقد بريدك الالكتروني للحصول على كلمة سر جديدة");
+      setMessage("تحقق من صندوق الوارد الخاص بك لمزيد من التعليمات.");
     } catch {
-      setError("فشل فى تغيير الرقم السري");
-    };
+      setError("فشل إعادة تعيين كلمة المرور.");
+    }
+
     setLoading(false);
   };
+
   return (
-    <Container className='my-4 w-50'>
-      <Card>
+    <Container className="mb-4">
+      <Card className="mt-4 mb-2">
+        <Card.Header>
+          <h2 className={`${cardheader} text-center mb-4 rounded py-2`}>
+            اعادة تعيين كلمة المرور
+          </h2>
+        </Card.Header>
         <Card.Body>
-          <h2 className='text-center mb-4'>إعادة تعيين كلمة المرور</h2>
-          {error && <Alert variant='danger'>{error}</Alert>}
+          {error && <Alert variant="danger">{error}</Alert>}
           {message && <Alert variant="success">{message}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group >
-              <Form.Label htmlFor="email">البريد الالكتروني</Form.Label>
-              <Form.Control type="email" id="email" ref={emailRef} />
+            <Form.Group id="email">
+              <Form.Label htmlFor="emailreset" className="h6">
+                البريد الالكتروني
+              </Form.Label>
+              <Form.Control
+                type="email"
+                id="emailreset"
+                ref={emailRef}
+                placeholder="name@example.com"
+                required
+              />
             </Form.Group>
-            <Button variant="primary" type="submit" className='mt-3' disabled={loading}>تأكيد</Button>
+            <Button disabled={loading} className="w-100 mt-3" type="submit">
+              تغيير كلمة المرور
+            </Button>
           </Form>
-          <div className="w-100 text-center d-flex mt-2">
-            <Link to="/login">لدي حساب بالفعل</Link>
-          </div>
         </Card.Body>
       </Card>
-      <div className='w-100 text-center mt-3 d-flex'>
-        ليس لديك حساب؟ <Link to="/signup">تسجيل جديد </Link>
+      <div className="w-100 text-center mt-3 d-flex flex-column align-items-start">
+        <p className="mb-1">
+          لدي بالفعل حساب:{" "}
+          <Link to="/login" className="border-bottom border-primary">
+            تسجيل دخول
+          </Link>
+        </p>
+        <p className="mb-0">
+          بحاجة الى حساب؟{" "}
+          <Link to="/signup" className="border-bottom border-primary">
+            تسجيل جديد
+          </Link>
+        </p>
       </div>
     </Container>
   );
 };
 
-export default ForgotPassword
+export default ForgotPassword;

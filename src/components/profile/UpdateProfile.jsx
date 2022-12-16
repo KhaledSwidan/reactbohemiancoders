@@ -1,75 +1,83 @@
-import React, { useRef, useState } from 'react'
-import { Alert, Button, Card, Container, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import React, { useRef, useState } from "react";
+import { useAuth } from "../../context/AuthContext";
+import { Form, Button, Card, Alert } from "react-bootstrap";
 
-const UpdateProfile = () =>
-{
-  const { currentUser, updateUserEmail, updateUserPassword } = useAuth();
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+import { Link, useNavigate } from "react-router-dom";
 
+const UpdateProfile = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const passwordConfiramtionRef = useRef();
-
+  const passwordConfirmRef = useRef();
+  const { currentUser, updateUserPassword, updateUserEmail } = useAuth();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = e =>
-  {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (passwordRef.current.value !== passwordConfiramtionRef.current.value) {
-      return setError("الرقم السري غير متطابق");
-    };
+    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+      return setError("Passwords do not match");
+    }
+
     const promises = [];
     setLoading(true);
     setError("");
-    if (emailRef.current.value !== currentUser.email) promises.push(updateUserEmail(emailRef.current.value));
-    if (passwordRef.current.value) promises.push(updateUserPassword(passwordRef.current.value));
 
-    Promise
-      .all(promises)
-      .then(() => navigate("/dashboard"))
-      .catch(() => setError("فشل فى تعديل الحساب"))
+    if (emailRef.current.value !== currentUser.email)
+      promises.push(updateUserEmail(emailRef.current.value));
+
+    if (passwordRef.current.value)
+      promises.push(updateUserPassword(passwordRef.current.value));
+
+    Promise.all(promises)
+      .then(() => navigate("/"))
+      .catch(() => setError("Failed to update account"))
       .finally(() => setLoading(false));
   };
 
   return (
     <>
-      <Container className='my-4 w-50'>
-        <Card>
-          <Card.Body>
-            <h2 className='text-center mb-4'>تعديل الصفحة الشخصية</h2>
-            {error && <Alert variant='danger'>{error}</Alert>}
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className='my-3'>
-                <Form.Label htmlFor="email">البريد الالكتروني</Form.Label>
-                <Form.Control
-                  type="email"
-                  id="email"
-                  ref={emailRef}
-                  defaultValue={currentUser?.email}
-                  required
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label htmlFor="password">كلمة السر</Form.Label>
-                <Form.Control type="password" id="password" ref={passwordRef} />
-              </Form.Group>
-              <Form.Group className='my-3'>
-                <Form.Label htmlFor="password-confirmation">تأكيد كلمة السر</Form.Label>
-                <Form.Control type="password" id="password-confirmation" ref={passwordConfiramtionRef} />
-              </Form.Group>
-              <Button variant="primary" type="submit" disabled={loading}>تسجيل</Button>
-            </Form>
-          </Card.Body>
-        </Card>
-        <div className='w-100 text-center mt-3 d-flex'>
-          هل تملك حساب بالفعل؟ <Link to="/login">تسجيل دخول </Link>
-        </div>
-      </Container>
+      <Card>
+        <Card.Body>
+          <h2 className="text-center mb-4">Update Profile</h2>
+          {error && <Alert variant="danger">{error}</Alert>}
+          <Form onSubmit={handleSubmit}>
+            <Form.Group id="email">
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                type="email"
+                ref={emailRef}
+                required
+                defaultValue={currentUser?.email}
+              />
+            </Form.Group>
+            <Form.Group id="password">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                ref={passwordRef}
+                placeholder="Leave blank to keep the same"
+              />
+            </Form.Group>
+            <Form.Group id="password-confirm">
+              <Form.Label>Password Confirmation</Form.Label>
+              <Form.Control
+                type="password"
+                ref={passwordConfirmRef}
+                placeholder="Leave blank to keep the same"
+              />
+            </Form.Group>
+            <Button disabled={loading} className="w-100 mt-3" type="submit">
+              Update
+            </Button>
+          </Form>
+        </Card.Body>
+      </Card>
+      <div className="w-100 text-center mt-2">
+        <Link to="/">Cancel</Link>
+      </div>
     </>
   );
 };
 
-export default UpdateProfile
+export default UpdateProfile;
