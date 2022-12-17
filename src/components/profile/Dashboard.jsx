@@ -17,7 +17,7 @@ const Dashboard = () => {
       await logout();
       navigate("/login");
     } catch {
-      setError("Failed to log out");
+      setError("فشل تسجيل الخروج");
     }
   };
 

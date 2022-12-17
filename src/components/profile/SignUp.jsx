@@ -19,16 +19,16 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match");
-    }
+    if (passwordRef.current.value !== passwordConfirmRef.current.value)
+      setError("كلمة المرور غير مطابقة");
+
     try {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
       navigate("/");
     } catch {
-      setError("Failed to create an account");
+      setError("فشل في إنشاء الحساب");
     }
     setLoading(false);
   };
@@ -37,7 +37,9 @@ const Signup = () => {
     <Container className="mb-4">
       <Card className="mt-4 mb-2">
         <Card.Header>
-          <h2 className={`${cardheader} text-center mb-4 rounded py-2`}>تسجيل جديد</h2>
+          <h2 className={`${cardheader} text-center mb-4 rounded py-2`}>
+            تسجيل جديد
+          </h2>
         </Card.Header>
         <Card.Body>
           {error && <Alert variant="danger">{error}</Alert>}
@@ -56,7 +58,7 @@ const Signup = () => {
             </Form.Group>
             <Form.Group className="my-2">
               <Form.Label htmlFor="password" className="h6">
-                كلمة السر
+                كلمة المرور
               </Form.Label>
               <Form.Control
                 id="password"

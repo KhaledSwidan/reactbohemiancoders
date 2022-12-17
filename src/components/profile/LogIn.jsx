@@ -24,7 +24,7 @@ const Login = () => {
       await login(emailRef.current.value, passwordRef.current.value);
       navigate(redirectPath);
     } catch {
-      setError("Failed to log in");
+      setError("فشل في تسجيل الدخول");
     }
 
     setLoading(false);

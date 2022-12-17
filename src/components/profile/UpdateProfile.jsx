@@ -1,10 +1,11 @@
 import React, { useRef, useState } from "react";
 import { useAuth } from "../../context/AuthContext";
-import { Form, Button, Card, Alert } from "react-bootstrap";
-
+import { Form, Button, Card, Alert, Container } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import styles from "./profile.module.css";
 
 const UpdateProfile = () => {
+  const { cardheader } = styles;
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
@@ -15,9 +16,8 @@ const UpdateProfile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match");
-    }
+    if (passwordRef.current.value !== passwordConfirmRef.current.value)
+      setError("كلمة المرور غير مطابقة");
 
     const promises = [];
     setLoading(true);
@@ -36,47 +36,57 @@ const UpdateProfile = () => {
   };
 
   return (
-    <>
-      <Card>
+    <Container className="mb-4">
+      <Card className="mt-4 mb-2">
+        <Card.Header>
+          <h2 className={`${cardheader} text-center mb-4 rounded py-2`}>
+            تحديث الملف الشخصي
+          </h2>
+        </Card.Header>
         <Card.Body>
-          <h2 className="text-center mb-4">Update Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+            <Form.Group>
+              <Form.Label htmlFor="email" className="h6">
+                البريد الالكتروني
+              </Form.Label>
               <Form.Control
+                id="email"
                 type="email"
                 ref={emailRef}
+                placeholder="name@example.com"
                 required
                 defaultValue={currentUser?.email}
               />
             </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                ref={passwordRef}
-                placeholder="Leave blank to keep the same"
-              />
+            <Form.Group className="my-2">
+              <Form.Label htmlFor="password" className="h6">
+                كلمة المرور
+              </Form.Label>
+              <Form.Control id="password" type="password" ref={passwordRef} />
             </Form.Group>
-            <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
+            <Form.Group>
+              <Form.Label htmlFor="password-confirm" className="h6">
+                تأكيد كلمة المرور
+              </Form.Label>
               <Form.Control
+                id="password-confirm"
                 type="password"
                 ref={passwordConfirmRef}
-                placeholder="Leave blank to keep the same"
               />
             </Form.Group>
-            <Button disabled={loading} className="w-100 mt-3" type="submit">
-              Update
-            </Button>
+            <div className="w-100 text-center mt-3 d-flex align-items-center justify-content-between">
+              <Button disabled={loading} className="w-50" type="submit">
+                تحديث
+              </Button>
+              <Link className="btn btn-danger w-25" to="/">
+                الغاء
+              </Link>
+            </div>
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
-        <Link to="/">Cancel</Link>
-      </div>
-    </>
+    </Container>
   );
 };
 
