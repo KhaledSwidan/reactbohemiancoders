@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
-import styles from "../brands/brands.module.css";
+import styles from "./sections.module.css";
 
 const filterDrugs = ({ filterDrug }) => {
   const { brndNav } = styles;

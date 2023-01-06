@@ -1,59 +1,115 @@
-.phSections{background-color: #a3d0e040;}
-.subSection{margin-bottom: 2.5rem;}
-.subSection h2{
+.phSections {
+  background-color: #a3d0e040;
+}
+.subSection {
+  margin-bottom: 2.5rem;
+}
+.subSection h2 {
   background-color: rgb(150 191 205 / 90%);
   position: sticky;
   top: 1rem;
   margin-bottom: 2rem !important;
 }
-.gall{
+.gall {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
 }
-.gallBoxy{
+.gallBoxy {
   text-align: center;
   border: 1px solid #fff;
   border-radius: 0.375rem;
   padding: 15px 25px;
   margin: 10px 5px;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
-.gallBoxy:hover{
-  transition: all .6s ease-in-out;
+.gallBoxy:hover {
+  transition: all 0.6s ease-in-out;
   background-color: rgb(228, 228, 228);
   box-shadow: 0 0 5px #fff;
 }
-.gallBoxy img{
+.gallBoxy img {
   margin-bottom: 20px;
   transition: 0.3s;
   border-radius: 0.375rem !important;
 }
 /*  */
-.navBullets{
-  z-index: 3;
-  right: -122px;
-  transition: all .6s ease-in-out;
+.brndNav {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+  box-shadow: 0 0 6px #0d5e8a;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
 }
-.navBullets:hover{
-  right: 5px !important;
-  transition: all .6s ease-in-out;
+.brndNav button {
+  background-color: #19647c !important;
 }
-.toolTip{
-  background-color: #19687f;
-  width: 155px;
-  color: #fff !important;
-  right: 30px;
-  top: -6px;
-  cursor: default;
-  cursor: pointer;
-  font-weight: 500;
-  background-color: rgb(25 100 124 / 70%) !important;
-  opacity: .7;
-  margin-bottom: 3px;
+.brndNavInpt {
+  width: 85% !important;
 }
-.toolTip:hover{
-  opacity: 1 !important;
-  background-color: rgb(25 100 124) !important
+/*  */
+.navBullets {
+  position: fixed;
+  right: -125px;
+  bottom: 80px;
+  transition: all 0.6s ease-in-out;
+}
+.navBullets:hover {
+  right: 3px;
+  transition: all 0.6s ease-in-out;
+}
+.toolTip {
+  background-color: #578ea1 !important;
+  border: none;
+  margin-bottom: 1px;
+}
+.toolTip:hover {
+  background-color: #47798a !important;
+}
+.ask {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
+  border-radius: 0.375rem;
+  background-color: #add1dd;
+}
+.ask div span {
+  margin-left: 10px;
+}
+.askCont {
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: baseline;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.375rem;
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+}
+.askCont:hover {
+  background-color: #84bbcd;
+  transition: all 0.6s ease-in-out;
+}
+.btnImg {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btnImg:hover {
+  background-color: rgb(87 142 161 / 50%) !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 8px rgb(87 142 161) !important;
+  transition: all 0.6s ease-in-out;
+}
+.stackItem {
+  background-color: rgba(91, 154, 175, 0.7);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #a0cfdf;
+}
+.stackItem:hover {
+  background-color: rgba(91, 154, 175, 0.9);
+  transition: all 0.4s ease-in-out;
 }

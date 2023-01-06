@@ -1,15 +1,7 @@
-import React from 'react'
-// import { Container } from 'react-bootstrap'
+import React from "react";
 
 const WishList = () => {
-  return (
-    <>
-      {/* <Container>
-        <MainTitle 
-        title=""
-      </Container> */}
-    </>
-  )
-}
+  return <div>WishList</div>;
+};
 
-export default WishList
+export default WishList;

@@ -37,7 +37,7 @@ const CarouselHome = () =>
           </div>
         </div>
         <div className={circleEffect}></div>
-        <img src={require("../imgs/doctor.png")} alt="" className={img} />
+        <img src={require("../../imgs/doctor.png")} alt="" className={img} />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import {
   UseShoppingCart,
   FormatCurrency,
 } from "../../context/ShoppingCartContext";
-import styles from "../brands/brands.module.css";
+import styles from "./sections.module.css";
 
 const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
   const { ask, btnImg, askCont } = styles;
@@ -24,8 +24,7 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
         variant="light"
         className={`${btnImg} btn w-100 p-0`}
         data-bs-toggle="modal"
-        data-bs-target={`#${btnImg}${id}`}
-      >
+        data-bs-target={`#${btnImg}${id}`}>
         <Card.Img
           src={imgSrc}
           variant="top"
@@ -36,8 +35,7 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
           id={`${btnImg}${id}`}
           tabIndex="-1"
           aria-labelledby={`${btnImg}${id}Label`}
-          aria-hidden="true"
-        >
+          aria-hidden="true">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-body p-0">
@@ -65,12 +63,10 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
           ) : (
             <div
               className="d-flex align-items-center flex-column"
-              style={{ gap: ".5rem" }}
-            >
+              style={{ gap: ".5rem" }}>
               <div
                 className="d-flex justify-content-center align-items-center"
-                style={{ gap: ".5rem" }}
-              >
+                style={{ gap: ".5rem" }}>
                 <Button onClick={() => increaseCartQuantity(id)}>+</Button>
                 <span>عدد القطع: {quantity}</span>
                 <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
@@ -78,8 +74,7 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
               <Button
                 onClick={() => removeItemFromCart(id)}
                 variant="danger"
-                size="sm"
-              >
+                size="sm">
                 ازالة من السلة
               </Button>
             </div>
@@ -88,8 +83,7 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
             type="button"
             className="btn btn-info mt-2 w-100"
             data-bs-toggle="modal"
-            data-bs-target={`#${id}`}
-          >
+            data-bs-target={`#${id}`}>
             اسأل الصيدلي
             <i className="fa-solid fa-circle-info ms-2"></i>
           </Button>
@@ -98,23 +92,20 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
             id={`${id}`}
             tabIndex="-1"
             aria-labelledby={`${id}Label`}
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <div className="modal-dialog">
               <div className="modal-content">
                 <div
                   className="modal-header"
                   style={{ backgroundColor: "rgb(25 100 124)" }}
-                  dir="ltr"
-                >
+                  dir="ltr">
                   <h5 className="modal-title" id={`${id}Label`}>
                     {title}
                   </h5>
                 </div>
                 <div
                   className="modal-body"
-                  style={{ backgroundColor: "rgb(25 100 124 / 50%)" }}
-                >
+                  style={{ backgroundColor: "rgb(25 100 124 / 50%)" }}>
                   <Alert variant="danger">{payAttention}</Alert>
                   <div className={ask}>
                     <div className={`${askCont}`}>
@@ -154,13 +145,11 @@ const StoreItem = ({ id, price, title, imgSrc, payAttention, content }) => {
                 </div>
                 <div
                   className="modal-footer flex-row-reverse justify-content-between"
-                  style={{ backgroundColor: "rgb(25 100 124)" }}
-                >
+                  style={{ backgroundColor: "rgb(25 100 124)" }}>
                   <button
                     type="button"
                     className="btn btn-danger"
-                    data-bs-dismiss="modal"
-                  >
+                    data-bs-dismiss="modal">
                     اغلاق
                   </button>
                   <button type="button" className="btn btn-primary">

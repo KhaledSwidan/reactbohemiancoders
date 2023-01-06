@@ -1,5 +1,5 @@
 import React from 'react';
-import imgLogo from "../imgs/title.webp"
+import imgLogo from "../../imgs/title.webp"
 
 const ContentFooter = () =>
 {

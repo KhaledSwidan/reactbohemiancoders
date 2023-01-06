@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./mainTitle.module.css";
-import imgLogo from "../imgs/title.webp"
+import imgLogo from "../../imgs/title.webp"
 
 const MainTitle = ({ ...props }) =>
 {

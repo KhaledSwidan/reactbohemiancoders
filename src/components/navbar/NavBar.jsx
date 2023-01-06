@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import siteLogo from "../imgs/siteLogo.webp";
+import siteLogo from "../../imgs/siteLogo.webp";
 import styles from "./fullnavbar.module.css";
 
 import ProfileNav from "./ProfileNav";
-import ShoppingNav from "./ShoppingNav";
 import SideNavBar from "./SideNavBar";
 
 const NavBar = () => {
@@ -17,8 +16,7 @@ const NavBar = () => {
         <div className="container d-flex justify-content-center w-100 py-2 px-5 position-relative border-bottom">
           <Link
             className="navbar-brand d-flex flex-row-reverse justify-content-center align-items-center"
-            to="/"
-          >
+            to="/">
             <img src={siteLogo} className="w-25 ps-1" alt="" />
             أسم الصيدلية|
           </Link>
@@ -32,7 +30,6 @@ const NavBar = () => {
               </a>
             </div>
             <div className={`${settingNav}`}>
-              <ShoppingNav />
               <ProfileNav />
             </div>
           </div>

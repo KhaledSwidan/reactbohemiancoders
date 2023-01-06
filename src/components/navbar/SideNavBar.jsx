@@ -20,12 +20,6 @@ const SideNavBar = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/brands">
-            <i className="fa-solid fa-prescription me-3"></i>
-            العلامات التجارية
-          </NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink className="nav-link" to="/offers">
             <i className="fa-solid fa-gift me-3"></i>
             العروض
@@ -37,8 +31,7 @@ const SideNavBar = () => {
             id="roshetaDropdown"
             role="button"
             data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+            aria-expanded="false">
             <i className="fa-solid fa-pills me-3"></i>
             الروشتة
           </Link>
@@ -51,8 +44,7 @@ const SideNavBar = () => {
             <li>
               <NavLink
                 className="dropdown-item text-start"
-                to="/contractrosheta"
-              >
+                to="/contractrosheta">
                 روشتة تعاقد
               </NavLink>
             </li>
@@ -73,8 +65,7 @@ const SideNavBar = () => {
             id="servicesDropdown"
             role="button"
             data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+            aria-expanded="false">
             <i className="fa-solid fa-hand-holding-medical me-3"></i>
             الخدمات
           </Link>

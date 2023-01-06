@@ -19,8 +19,7 @@ const MainPhSection = () => {
   return (
     <section
       id="phSections"
-      className={`${phSections} cdcdcd py-5 position-relative`}
-    >
+      className={`${phSections} cdcdcd py-5 position-relative`}>
       <Container>
         <MainTitle
           title="أقسام الصيدلية"

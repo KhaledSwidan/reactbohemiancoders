@@ -7,70 +7,62 @@ const PhNavSections = ({ filterResult }) => {
 
   return (
     <>
-      <nav className={`${navBullets} position-fixed top-50 d-flex flex-column`}>
+      <nav className={`${navBullets} d-flex flex-column`}>
         <Button
           onClick={() => filterResult("one")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-one"
-        >
+          data-section=".subSection-one">
           الأدوية
-          <i className="fa-solid fa-file-prescription ms-1"></i>
+          <i className="fa-solid fa-file-prescription ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("two")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-two"
-        >
+          data-section=".subSection-two">
           المكملات الغذائية
-          <i className="fa-solid fa-watch-fitness ms-1"></i>
+          <i className="fa-solid fa-watch-fitness ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("three")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-three"
-        >
+          data-section=".subSection-three">
           مستلزمات طبية
-          <i className="fa-solid fa-briefcase-medical ms-1"></i>
+          <i className="fa-solid fa-briefcase-medical ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("four")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-four"
-        >
+          data-section=".subSection-four">
           مستلزمات عامة
-          <i className="fa-solid fa-shuffle ms-1"></i>
+          <i className="fa-solid fa-shuffle ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("five")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-five"
-        >
+          data-section=".subSection-five">
           التجميل والعطور
-          <i className="fa-solid fa-venus-mars ms-1"></i>
+          <i className="fa-solid fa-venus-mars ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("six")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-six"
-        >
+          data-section=".subSection-six">
           العناية بالمرأة
-          <i className="fa-solid fa-venus ms-1"></i>
+          <i className="fa-solid fa-venus ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("seven")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-seven"
-        >
+          data-section=".subSection-seven">
           العناية بالرجل
-          <i className="fa-solid fa-mars ms-1"></i>
+          <i className="fa-solid fa-mars ms-3"></i>
         </Button>
         <Button
           onClick={() => filterResult("eight")}
           className={`${toolTip} py-1 px-2 rounded text-center d-flex justify-content-between`}
-          data-section=".subSection-eight"
-        >
+          data-section=".subSection-eight">
           مستلزمات الطفل
-          <i className="fa-solid fa-child-reaching ms-1"></i>
+          <i className="fa-solid fa-child-reaching ms-3"></i>
         </Button>
       </nav>
     </>

@@ -1,87 +1,81 @@
-import { React, useRef, useState } from "react";
-import { useAuth } from "../../context/AuthContext";
-import { Form, Button, Card, Alert, Container } from "react-bootstrap";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { React, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Form, Button, Container, ButtonGroup } from "react-bootstrap";
+import { auth } from "../../firebase";
+
 import styles from "./profile.module.css";
 
 const Login = () => {
-  const { cardheader } = styles;
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const { login } = useAuth();
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const { signin } = styles;
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const navigate = useNavigate();
-  const location = useLocation();
-  const redirectPath = location.state?.path || "/";
 
-  const handleSubmit = async (e) => {
+  const signIn = (e) => {
     e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        if (auth) navigate("/");
+      })
+      .catch((err) => alert(err.message));
+  };
 
-    try {
-      setError("");
-      setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
-      navigate(redirectPath);
-    } catch {
-      setError("فشل في تسجيل الدخول");
-    }
-
-    setLoading(false);
+  const register = (e) => {
+    e.preventDefault();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        if (auth) navigate("/");
+      })
+      .catch((err) => alert(err.message));
   };
 
   return (
-    <Container className="mb-4">
-      <Card className="mt-4 mb-2">
-        <Card.Header>
-          <h2 className={`${cardheader} text-center mb-4 rounded py-2`}>تسجيل الدخول</h2>
-        </Card.Header>
-        <Card.Body>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group>
-              <Form.Label htmlFor="email" className="h6">
-                البريد الالكتروني
-              </Form.Label>
+    <section>
+      <Container className="my-4 w-75">
+        <h2 className={`${signin} rounded p-3 text-center w-100`}>
+          تسجيل الدخول
+        </h2>
+        <Container>
+          <Form>
+            <Form.Group className="my-3" controlId="formEmail">
+              <Form.Label className="h5">البريد الالكتروني</Form.Label>
               <Form.Control
-                id="email"
                 type="email"
-                placeholder="name@example.com"
-                ref={emailRef}
-                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="abc@example.com"
               />
             </Form.Group>
-            <Form.Group className="mt-2">
-              <Form.Label htmlFor="password" className="h6">
-                كلمة السر
-              </Form.Label>
+            <Form.Group className="mb-3" controlId="formPassword">
+              <Form.Label className="h5">كلمة السر</Form.Label>
               <Form.Control
-                id="password"
                 type="password"
-                ref={passwordRef}
-                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-            <Button disabled={loading} className="w-100 mt-3" type="submit">
-              دخول
-            </Button>
+            <ButtonGroup>
+              <Button variant="primary" type="submit" onClick={signIn}>
+                تسجيل دخول
+              </Button>
+              <Button
+                variant="success"
+                className="ms-2"
+                type="submit"
+                onClick={register}>
+                انشاء حساب جديد
+              </Button>
+            </ButtonGroup>
           </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-4 d-flex flex-column align-items-start">
-        <p className="mb-2">
-          <Link to="/forgot-password" className="border-bottom border-primary">
-            هل نسيت كلمة السر؟
-          </Link>
-        </p>
-        <p className="mb-0">
-          بحاجة الى حساب؟{" "}
-          <Link to="/signup" className="border-bottom border-primary">
-            تسجيل جديد
-          </Link>
-        </p>
-      </div>
-    </Container>
+        </Container>
+      </Container>
+    </section>
   );
 };
 

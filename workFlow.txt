@@ -1,0 +1,2 @@
+// npm install firebase react-router-dom react-firebase-hooks
+=> Here, we are installing firebase to communicate with Firebase services, and we are also installing react-router-dom to handle the routing of the application. We use react-firebase-hooks to manage the authentication state of the user.

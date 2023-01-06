@@ -2,7 +2,7 @@ const sections = [
   {
     "char": "a",
     "id": "sec1",
-    "imgSrc": require("../components/imgs/asprinprotect100.jpg"),
+    "imgSrc": require("../imgs/asprinprotect100.jpg"),
     "title": "ASPIRIN PROTECT 100mg",
     "payAttention": "المعلومات الواردة عن الدواء مبنية على النشرات الطبية للدواء، مع هذا فإنها لا تشكل بديلا عن استشارة الطبيب.",
     "content": {
@@ -33,7 +33,7 @@ const sections = [
   {
     "char": "b",
     "id": "sec2",
-    "imgSrc": require("../components/imgs/brufen400tab.jpg"),
+    "imgSrc": require("../imgs/brufen400tab.jpg"),
     "title": "BRUFEN 400 MG TAB",
     "payAttention": "المعلومات الواردة عن الدواء مبنية على النشرات الطبية للدواء، مع هذا فإنها لا تشكل بديلا عن استشارة الطبيب.",
     "content": {
